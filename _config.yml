@@ -69,4 +69,4 @@ defaults:
       lang: zh       
       
 #Set Syntax Highlighter
-highlighter: pygments
+highlighter: rouge
