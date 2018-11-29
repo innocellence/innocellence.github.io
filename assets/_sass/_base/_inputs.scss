@@ -1,0 +1,35 @@
+input, textarea {
+  width: 100%;
+  padding: $base-spacing /2;
+  margin: $small-spacing 0;
+  border-radius: $base-border-radius;
+  font-size: $base-font-size;
+  border:  2px solid transparent;
+  appearance: none;
+  @include transition(all $base-duration $base-timing);
+
+  &:focus {
+    border-color: $red;
+    outline: none;
+  }
+}
+.form-group {
+  width: 100%;
+  @include display(flex);
+
+  input {
+    @include flex(1 0 auto);
+    width: auto;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  button, a.btn {
+    @include flex(0 1 auto);
+    width: auto;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+.form_error {
+  color: $red;
+}

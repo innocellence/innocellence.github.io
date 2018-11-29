@@ -1,0 +1,202 @@
+body {
+  background-image: url(sativa.png);
+}
+
+.card {
+  position: absolute;
+/*  top: 0;*/
+  left: 0;
+  right: 0;
+/*  bottom: 0;*/
+  margin: auto;
+/*  overflow: hidden;*/
+  width: 600px;
+  height: 370px;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  z-index: 2;
+  color: #ef4b46;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+p {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 8px solid white;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.singapore {
+  right: 500px;
+  top: 200px;
+  -ms-transform: rotate(-2deg); 
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-animation-name: singaporeFloat;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: singaporeFloatFF;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;    
+}
+
+.tokyo {
+  left: 500px;
+  top: 280px;
+  -ms-transform: rotate(6deg); 
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+  
+  -webkit-animation-name: tokyoFloat;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: tokyoFloatFF;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;      
+}
+.shanghai {
+  right: 500px;
+  top: 560px;
+  -ms-transform: rotate(-4deg); 
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);  
+  
+  -webkit-animation-name: shanghaiFloat;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: shanghaiFloatFF;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;      
+}
+.dalian {
+  left: 500px;
+  top: 640px;
+  -ms-transform: rotate(3deg); 
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg); 
+  
+  -webkit-animation-name: dalianFloat;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: dalianFloatFF;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;      
+}
+
+@-webkit-keyframes singaporeFloat{
+    from {-webkit-transform:translate(0, 0px) rotate(-2deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(-2deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(-2deg);}    
+}
+
+@-webkit-keyframes singaporeFloatFF{
+    from {-webkit-transform:translate(0, 0px) rotate(-2deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(-2deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(-2deg);}    
+}
+
+@-webkit-keyframes tokyoFloat{
+    from {-webkit-transform:translate(0, 0px) rotate(6deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(6deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(6deg);}    
+}
+
+@-webkit-keyframes tokyoFloatFF{
+    from {-webkit-transform:translate(0, 0px) rotate(6deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(6deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(6deg);}    
+}
+
+@-webkit-keyframes shanghaiFloat{
+    from {-webkit-transform:translate(0, 0px) rotate(-4deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(-4deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(-4deg);}    
+}
+
+@-webkit-keyframes shanghaiFloatFF{
+    from {-webkit-transform:translate(0, 0px) rotate(-4deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(-4deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(-4deg);}    
+}
+
+@-webkit-keyframes dalianFloat{
+    from {-webkit-transform:translate(0, 0px) rotate(3deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(3deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(3deg);}    
+}
+
+@-webkit-keyframes dalianFloatFF{
+    from {-webkit-transform:translate(0, 0px) rotate(3deg);}
+    65% {-webkit-transform:translate(0, 8px) rotate(3deg);}
+    to {-webkit-transform: translate(0, -0px) rotate(3deg);}    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 8px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+@media screen and (max-width: 960px) {
+  .singapore, .tokyo, .shanghai, .dalian {
+    left: 0;
+    right: 0;
+  }
+  .singapore {
+    top: 180px;
+  }
+  .tokyo {
+    top: 1180px;
+  }
+  .shanghai {
+    top: 520px;
+  }
+  .dalian {
+    top: 840px;
+  }
+  
+  body {
+    overflow-x: hidden;  
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .singapore, .tokyo, .shanghai, .dalian {
+    width: auto;
+  }
+  .singapore {
+    top: 270px;
+  }
+  .tokyo {
+    top: 1190px;
+  }
+  .shanghai {
+    top: 570px;
+  }
+  .dalian {
+    top: 870px;
+  }
+}

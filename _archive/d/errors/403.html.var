@@ -1,0 +1,13 @@
+URI: 403.html
+
+Content-language: en
+Content-type: text/html
+URI: 403.en.html
+
+Content-language: zh,cn
+Content-type: text/html
+URI: 403.cn.html
+
+Content-language: jp,ja
+Content-type: text/html
+URI: 403.jp.html

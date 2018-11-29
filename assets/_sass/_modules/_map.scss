@@ -1,0 +1,179 @@
+// Map Variables 
+$map-card-background: $pearl;
+$full-map-breakpoint: 1000px;
+
+section.map {
+  max-width: 100%;
+  padding: $base-spacing $small-spacing;
+  margin: 0 auto;
+  @include clearfix;
+  position: relative;
+  
+  .map-inner {
+    @include outer-container;
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+  }
+  
+  @include media($full-map-breakpoint) {
+    padding: $base-spacing $small-spacing;
+    height: 724px;
+  }
+}
+
+@include media(max-width $full-map-breakpoint) {
+  #map_canvas {
+    display: none;
+  }      
+}
+
+.map-card {
+  width: 100%;
+  @include display(flex);
+  padding: $small-spacing;  
+  
+  @include media($tab-screen) {
+    width: 50%;
+  }
+  
+  @include media($full-map-breakpoint) {
+    width: 25%;
+  }
+
+  .map-card-container {
+    width: 100%;
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    background: $map-card-background;
+    padding: $base-spacing;  
+    border: none;
+    
+    @include media($tab-screen) {
+      @include flex-direction(column);
+    }
+
+      .map-card-text {
+        
+        h4 {
+          margin-top: 0;
+        }
+        p {
+          margin: 0;
+        }  
+        .tel, .fax {
+          font-size: 1.2em;      
+        }
+        .email, .maplink, .building-name, .street-address, .postal-code {
+          font-size: 0.9em;  
+        }
+        .email, .maplink {
+          display: inline-block;
+        }
+      } // End map-card-text
+
+      
+      
+
+  
+    @include media($full-map-breakpoint) {
+      cursor: pointer;
+      position: static;
+      
+       &.active {
+        background: $red;
+        color: $white;
+         
+         p, .email, .maplink {
+           color: $white;
+         }
+         .map-area {
+          z-index: 1;
+         }
+
+        &:after {
+            content: '';
+            position: relative;
+            left: inherit;
+            right: inherit;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid $red;
+            bottom: -40px;
+        }
+      } // End .active
+    }
+    
+  } // End map-card-container
+  
+} //End map-card
+  
+  
+  
+  
+
+//Google map
+.map-area {
+  display: none;
+  
+  @include media($sm-screen) {      
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin-top: 0;
+    background: $red;
+    z-index: 0;
+  }
+  @include media($tab-screen) {      
+    width: 100%;
+    margin-top: $base-spacing;
+  }
+  
+  @include media($full-map-breakpoint) {      
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 300px;
+    height: 400px;
+    @include clearfix;
+  }
+
+  #map-marker {
+      color:  $red !important;
+      padding: 0.5em;
+    
+    h1 {
+      font-size: 1em;
+      line-height: 1.4em;
+      font-weight: bold;
+      margin: 0;
+    }
+    p {
+      color:  $red;
+      font-size: 0.9em;
+      line-height: 1.2em;
+      margin: 0;
+    }
+  } // end map-marker
+} // End Map Area
+
+//Map Fallbacks
+#map_canvas_singapore {
+  background-image: url(../img/contact/map_singapore.png);
+  background-position: center;
+}
+#map_canvas_shanghai {
+  background-image: url(../img/contact/map_shanghai.png);
+  background-position: center;
+}
+#map_canvas_dalian {
+  background-image: url(../img/contact/map_dalian.png);
+  background-position: center;
+}
+#map_canvas_tokyo {
+  background-image: url(../img/contact/map_tokyo.png);
+  background-position: center;
+}

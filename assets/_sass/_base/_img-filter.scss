@@ -1,0 +1,41 @@
+.logo-group {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  
+  .set {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+    @include flex(0 0 50%);
+  }
+  .set > div {
+    @include flex(0 0 25%);
+    min-width: 180px;
+  }
+}
+
+a.img-filter {
+  border-bottom: none;
+  display: block;
+  
+  img {
+    display: block;
+    @include transition(all $base-duration $base-timing);
+  }
+  h6 {
+    margin: 0;
+    display: inline;
+    border-bottom: 1px solid transparent;
+    @include transition(all $base-duration $base-timing);
+  }
+  
+  &:hover, &:focus {
+  img {
+    margin-bottom: -.5rem;
+  }
+    h6 {
+      border-bottom-color: $red;
+    }
+  }
+}

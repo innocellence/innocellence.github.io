@@ -1,0 +1,63 @@
+//Subscribe Widget
+.subscribe {
+  padding: 2rem $base-padding;
+  background: darken($section-background, 2%);
+  border-top: $base-border;
+  border-top-color: darken($section-background, 4%);
+
+  .subscribe_message {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    text-align: center;
+
+    @include media($tab-screen) {
+      @include flex-wrap(nowrap);
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: $red;
+    }
+    p {
+      font-size: 19px;
+      font-weight: 200;
+      margin-bottom: 0;
+    }
+    img {
+      height: 140px;
+      margin: 0 auto;
+
+      @include media($tab-screen) {
+        margin: 0 $base-padding;
+      }
+    }
+  }
+  .form-group {
+    margin: 0 auto;
+
+    @media screen and (max-width: $sm) {
+      display: block;
+    }
+  }
+  form {
+    position: relative;
+    margin: $base-spacing auto 0 auto;
+
+    @include media($tab-screen) {
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width: $sm) {
+    input,
+    button,
+    a.btn {
+      display: block;
+      width: 100%;
+      border-radius: $base-border-radius;
+    }
+  }
+}
+

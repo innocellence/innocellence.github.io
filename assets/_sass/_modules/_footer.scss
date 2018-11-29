@@ -1,0 +1,78 @@
+footer {
+  background-color: $footer-bg;
+  width: 100%;
+  color: $footer-color;
+  
+  .container {
+    @include outer-container;
+    padding: $base-padding;
+  }
+  h6 {
+    border-bottom: 1px solid $footer-title-color;
+    margin-bottom: $small-spacing;
+    padding-bottom: $small-spacing;
+    color: $footer-title-color;
+  }
+  a {
+    color: $footer-color;
+    border-bottom: none;
+    &:hover, &:focus {
+      color: $footer-link-hover-color;
+      border-bottom: none;
+    }
+  }
+  ul {
+    font-size: $small-font-size;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      width: 100%;
+      padding-bottom: $small-spacing;
+    }
+  }
+  
+  //Footer divs
+  .innocellence,
+  .solutions,
+  .social {
+    @include media($sm-screen){
+      @include span-columns(2 of 6);
+      @include omega(3n);
+    }
+    @include media($md-screen) {
+      @include span-columns(4 of 12);
+    }
+    @include media($lg-screen) {
+      @include span-columns(3 of 12);
+      @include omega-reset(3n);
+    }
+  }
+  .legal {
+    @include media($sm-screen) {
+      @include span-columns(6 of 6);
+    }
+    @include media($md-screen) {
+      @include span-columns(12 of 12);
+    }
+    @include media($lg-screen) {
+      @include span-columns(3 of 12);
+    }
+  }
+  
+  .legal ul li {
+    display: inline-block;
+    padding-right: 0;
+    @include media($tab-screen) {
+      display: inline;
+      padding-right: $base-padding;
+    }
+    @include media($lg-screen) {
+      display: inline-block;
+      padding-right: 0;
+    }
+    &.copy-text {
+      display: block;
+    }
+  }
+}

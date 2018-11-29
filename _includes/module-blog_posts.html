@@ -1,0 +1,39 @@
+<script type="text/javascript" src="http://blog.innocellence.com/shared/ghost-url.min.js"></script>
+<script type="text/javascript">
+ghost.init({
+  clientId: "ghost-frontend",
+  clientSecret: "6f29fb3126df"
+});
+
+function onSuccess(data) {
+  var $result = $('#blog-posts');
+  var blogURL = 'http://blog.innocellence.com';
+
+  $.each(data.posts, function (i, post) {
+    var truncateTitle = post.title.substring(0,130);
+    var blog = blogURL +post.url;
+    var image = blogURL +post.image;
+    $result.append(
+        '<a href="'+blog+'" class="grid-item"><div class="grid-item-container"><h3><span>'+truncateTitle+'</span></h3><div class="read-more"><span>Read More »</span></div></div><img src="'+image+'"></a>'
+    );
+  });
+  $result.append(
+    '<a href="'+blogURL+'" class="grid-item all-posts"><div class="grid-item-container"><h3>See All Posts</h3></div></a>'
+  );
+}
+
+/* Get Tags */
+jQuery(document).ready(function () {
+  $.get(ghost.url.api('tags')).done(function (data){
+    console.log('tags', data.tags);
+  }).fail(function (err){
+    console.log(err);
+  });
+});
+</script>
+
+<section class="grid">
+  <div class="container" id="blog-posts">
+    <h5 class="section-title">Latest Posts</h5>
+  </div>
+</section>

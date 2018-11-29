@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* ==========================================
+fonts.css
+========================================== */
+
+/* font face
+========================================== */
+@font-face {
+	font-family: 'RopaSansRegular';
+	src: url('font/RopaSans-Regular-webfont.eot');
+	src: url('font/RopaSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('font/RopaSans-Regular-webfont.woff') format('woff'),
+url('font/RopaSans-Regular-webfont.ttf') format('truetype'),
+url('font/RopaSans-Regular-webfont.svg#RopaSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RopaSansItalic';
+	src: url('font/RopaSans-Italic-webfont.eot');
+	src: url('font/RopaSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+url('font/RopaSans-Italic-webfont.woff') format('woff'),
+url('font/RopaSans-Italic-webfont.ttf') format('truetype'),
+url('font/RopaSans-Italic-webfont.svg#RopaSansItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,5 @@
+@media print {
+  .main-navigation, .sub-navigation, footer {
+    display: none !important;
+  }
+}

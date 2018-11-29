@@ -1,0 +1,21 @@
+{% if page.lang == 'zh' %}
+<section class="shoutout">
+  <a href="{{site.baseurl}}/cn/contact/" class="shoutout-link"> 
+    <div class="shoutout-copy"> 
+      <h1 class="mw">想要了解更多</h1> 
+      <p class="pn">马上联系我们</p>
+      <img src="{{site.baseurl}}/assets/img/arrows/right-arrow.svg">
+    </div>
+  </a>
+</section>
+{% else %}
+<section class="shoutout">
+  <a href="{{site.baseurl}}/en/contact/" class="shoutout-link"> 
+    <div class="shoutout-copy"> 
+      <h1 class="mw">Make an Enquiry</h1> 
+      <p class="pn">Contact Us Now</p>
+      <img src="{{site.baseurl}}/assets/img/arrows/right-arrow.svg">
+    </div>
+  </a>
+</section>
+{% endif %}

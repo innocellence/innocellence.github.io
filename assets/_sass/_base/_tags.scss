@@ -1,0 +1,67 @@
+//Tag Base Color
+$color: $base-font-color;
+
+// Mixins
+@mixin color-define($color) {
+  border: 2px solid $color;
+  color: $color;
+
+  &:hover, &:focus {
+    background: $color;
+  }
+}
+
+// General Tag styling
+ul.tags {
+  text-transform: uppercase;
+  list-style: none; 
+  padding: 0;
+
+  li {
+    display: inline-block;
+    font-size: modular-scale(-1);
+    margin: $small-spacing /2;
+    margin-left: 0;
+    
+    a {
+      display: block;
+      width: auto;
+      text-decoration: none;
+      color: $color;
+      font-weight: bold;
+      border: 2px solid $color;
+      padding: $small-spacing /2 $small-spacing;
+      border-radius: $base-border-radius;
+      @include transition(all $base-duration $base-timing);
+      
+      &:hover, &:focus {
+        background: $color;
+        color: $white;
+        @include transition(all $base-duration $base-timing);
+      }
+    }
+    &.active {
+      a {
+        background: $color;
+        color: $white;
+      }
+    }
+  }
+} // End .tags
+
+// Color Options
+.tags > .sky a {
+  @include color-define($sky);
+}
+.tags > .pink a {
+  @include color-define($pink);
+}
+.tags > .emerald a {
+  @include color-define($emerald);
+}
+.tags > .grey a {
+  @include color-define($grey);
+}
+.tags > .orange a {
+  @include color-define($orange);
+}

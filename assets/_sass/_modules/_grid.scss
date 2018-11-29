@@ -1,0 +1,160 @@
+// Feed Variables
+$grid-item-height: 260px;
+$grid-small-screen: 480px;
+$grid-large-screen: 800px;
+
+.grid {
+  max-width: 100%;
+  background: $section-background;
+}
+
+// Grid Size
+.grid-item {
+  display: block;
+  margin-right: 0;
+  height: $grid-item-height;   
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  
+  @include media($grid-small-screen) {
+    width: 50%;
+    float: left;
+    margin-right: 0;
+  }
+  @include media($grid-large-screen) {
+    width: 33.33333334%;
+    margin-right: 0;
+  }
+}
+
+//Grid Hover effects
+.grid-item:hover {
+  img {
+    @include filter(grayscale(0));
+    opacity: 0.8;
+  }
+  .grid-item-container:after {
+    opacity: 0.2;
+  }  
+  span {
+    background: $red;
+    box-shadow: 6px 0 0 $red, 6px *-1 0 0 $red;
+  }
+}
+
+//Grid Style
+.grid-item {
+  background: $action-color;
+  text-decoration: none;
+
+  .grid-item-container {
+    @include position(relative, null null null -1%);
+    @include size(102% 100%);
+    height: inherit;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+    padding: $base-spacing;
+    color: $white;
+    @include transition (all $base-duration $base-timing);
+
+    &:after {
+      @extend %center-absolute;
+      @include size(120%);
+      content: '';
+      display: block;
+      background: $action-color;   
+      opacity: 0.8;
+      z-index: -1;
+      @include transition (all $base-duration $base-timing);
+    }
+  }
+  img {
+    @extend %center-absolute;
+    z-index: 0;
+    width: 110%;
+    min-height: $grid-item-height;
+    max-width:  none;
+    @include filter(grayscale(100%));
+    @include transition (all $base-duration $base-timing);
+  } 
+  h3 {
+    font-size: $h4-font-size;
+    margin-top: 0;
+    position: relative;
+  }
+  .read-more {
+    position: absolute;
+    left: $base-spacing;
+    bottom: $base-spacing;
+    margin: 0;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold; 
+  }
+  span {
+    display: inline;  
+    padding: 2px;
+    position: relative;
+    padding-left: 0;
+    @include transition (all $base-duration $base-timing);
+  }
+}
+
+//All Posts Item
+.grid-item.all-posts {
+  background: $red;
+  text-decoration: none;
+  text-align: center;
+  
+  &:hover {
+    .grid-item-container:before {
+      opacity: 1;
+      @include size(60px);
+      border: 4px solid $white;
+    } 
+    .grid-item-container:after {
+      opacity: 0.8;
+    } 
+  }
+  
+  .grid-item-container {
+    padding: 0;
+  }
+  
+  .grid-item-container:after {
+    @extend %center-absolute;
+    @include size(120%);
+    content: '';
+    display: block;
+    background-color: $red;   
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  .grid-item-container:before {
+    @extend %center-absolute;
+    @include size(20em);
+    content: '';
+    display: block;
+    z-index: 1;
+    opacity: 0.1;
+    border-radius: 50%;
+    border: 10px solid $white;
+    background-color: darken($red, 10%);
+    background-image: url(../../assets/img/arrows/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: 40% 40%;
+    @include transition (all 0.2s ease-in-out);
+  }
+  
+  h3 {
+    opacity: 1;
+    @include position(absolute, 50% null null null);
+    @include size(100% auto);
+    @include transform(translateY(-50%));
+    margin: 0;
+  }
+}

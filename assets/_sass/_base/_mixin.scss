@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+//Mixin
+%center-absolute {
+  @include position(absolute, 50% null null 50%);
+  @include size(100% auto);
+  @include transform(translate(-50%, -50%));
+} 
+
+
+// Omega Reset Mixin Required for Breakpoints
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

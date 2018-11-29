@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+  {% include head.html %}
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/masonry/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/masonry/masonry.js"></script>
+</head>
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<body>
+  {% include svg_defs.html%}
+  <header class="main-navigation">
+    <div class="navigation-wrapper">
+      <a href="{{site.baseurl}}/" class="logo">
+        <img class="logo-icon" src="{{site.baseurl}}/assets/img/branding/logo/InnoCellence_Logo.svg" alt="InnoCellence">
+        <img class="logo-text" src="{{site.baseurl}}/assets/img/branding/logo/InnoCellence_aLogo.svg" alt="InnoCellence">
+      </a>
+      <a href="javascript:void(0)" id="js-nav-mobile-menu" class="toggle-container">
+        <div class="toggle-text">Menu</div>
+        <div class="toggle-switch"><span></span></div>
+      </a>
+      {% include menu_language.html %}
+      {% include menu_topnav.html %}
+    </div>
+  </header>
+  {{ content }}
+  {% include subscribe.html %}
+  {% include footer.html %}  
+</body>
+</html>

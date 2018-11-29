@@ -1,0 +1,34 @@
+{% assign full_url = page.url | append:'index.html' %}
+{% if page.lang == 'zh' %}
+<div class="sub-navigation">
+  <div class="sub-nav-wrapper">
+    <ul class="sub-menu">
+    {% for menu in site.data.cn-sitemap.about_subnav %}
+    {% for menuitem in menu.menuitems %}
+    {% if menuitem.url == full_url or menuitem.url == page.url %}
+    <li class="nav-link active"><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% else %}
+    <li class="nav-link"><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% endif %} 
+    {% endfor %}
+    {% endfor %} 
+    </ul>
+  </div>
+</div> 
+{% else %}
+<div class="sub-navigation">
+  <div class="sub-nav-wrapper">
+    <ul class="sub-menu">
+    {% for menu in site.data.en-sitemap.about_subnav %}
+    {% for menuitem in menu.menuitems %}
+    {% if menuitem.url == full_url or menuitem.url == page.url %}
+    <li class="nav-link active"><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% else %}
+    <li class="nav-link"><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% endif %} 
+    {% endfor %}
+    {% endfor %} 
+    </ul>
+  </div>
+</div>
+{% endif %}

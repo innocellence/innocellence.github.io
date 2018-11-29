@@ -1,0 +1,405 @@
+// Col Variables
+.row {
+  @include row();
+}
+
+
+.col-12 {
+  @include span-columns(12);
+}
+.col-11 {
+  @include span-columns(11);
+}
+.col-10 {
+  @include span-columns(10);
+}
+.col-9 {
+  @include span-columns(9);
+}
+.col-8 {
+  @include span-columns(8);
+}
+.col-7 {
+  @include span-columns(7);
+}
+.col-6 {
+  @include span-columns(6);
+}
+.col-5 {
+  @include span-columns(5);
+}
+.col-4 {
+  @include span-columns(4);
+}
+.col-3 {
+  @include span-columns(3);
+}
+.col-2 {
+  @include span-columns(2);
+}
+.col-1 {
+  @include span-columns(1);
+}
+
+// Shift
+.shift-0 {
+  @include shift(0);
+}
+.shift-1 {
+  @include shift(1);
+}
+.shift-2 {
+  @include shift(2);
+}
+.shift-3 {
+  @include shift(3);
+}
+.shift-4 {
+  @include shift(4);
+}
+.shift-5 {
+  @include shift(5);
+}
+.shift-6 {
+  @include shift(6);
+}
+.shift-7 {
+  @include shift(7);
+}
+.shift-8 {
+  @include shift(8);
+}
+.shift-9 {
+  @include shift(9);
+}
+.shift-10 {
+  @include shift(10);
+}
+.shift-11 {
+  @include shift(11);
+}
+.shift-12 {
+  @include shift(12);
+}
+
+@include media($sm-screen){
+//  .col-s12 {
+//    @include span-columns(12);
+//  }
+//  .col-s11 {
+//    @include span-columns(11);
+//  }
+//  .col-s10 {
+//    @include span-columns(10);
+//  }
+//  .col-s9 {
+//    @include span-columns(9);
+//  }
+//  .col-s8 {
+//    @include span-columns(8);
+//  }
+//  .col-s7 {
+//    @include span-columns(7);
+//  }
+//  .col-s6 {
+//    @include span-columns(6);
+//  }
+//  .col-s5 {
+//    @include span-columns(5);
+//  }
+  .col-s4 {
+    @include span-columns(4);
+  }
+  .col-s3 {
+    @include span-columns(3);
+  }
+  .col-s2 {
+    @include span-columns(2);
+  }
+  .col-s1 {
+    @include span-columns(1);
+  }
+  
+  // Shift
+  .shift-s0 {
+    @include shift(0);
+  }
+  .shift-s1 {
+    @include shift(1);
+  }
+  .shift-s2 {
+    @include shift(2);
+  }
+  .shift-s3 {
+    @include shift(3);
+  }
+  .shift-s4 {
+    @include shift(4);
+  }
+//  .shift-s5 {
+//    @include shift(5);
+//  }
+//  .shift-s6 {
+//    @include shift(6);
+//  }
+//  .shift-s7 {
+//    @include shift(7);
+//  }
+//  .shift-s8 {
+//    @include shift(8);
+//  }
+//  .shift-s9 {
+//    @include shift(9);
+//  }
+//  .shift-s10 {
+//    @include shift(10);
+//  }
+//  .shift-s11 {
+//    @include shift(11);
+//  }
+//  .shift-s12 {
+//    @include shift(12);
+//  }
+}
+@include media($tab-screen){
+//  .col-t12 {
+//    @include span-columns(12);
+//  }
+//  .col-t11 {
+//    @include span-columns(11);
+//  }
+//  .col-t10 {
+//    @include span-columns(10);
+//  }
+//  .col-t9 {
+//    @include span-columns(9);
+//  }
+//  .col-t8 {
+//    @include span-columns(8);
+//  }
+//  .col-t7 {
+//    @include span-columns(7);
+//  }
+  .col-t6 {
+    @include span-columns(6);
+  }
+  .col-t5 {
+    @include span-columns(5);
+  }
+  .col-t4 {
+    @include span-columns(4);
+  }
+  .col-t3 {
+    @include span-columns(3);
+  }
+  .col-t2 {
+    @include span-columns(2);
+  }
+  .col-t1 {
+    @include span-columns(1);
+  }
+  
+  // Shift
+  .shift-t0 {
+    @include shift(0);
+  }
+  .shift-t1 {
+    @include shift(1);
+  }
+  .shift-t2 {
+    @include shift(2);
+  }
+  .shift-t3 {
+    @include shift(3);
+  }
+  .shift-t4 {
+    @include shift(4);
+  }
+  .shift-t5 {
+    @include shift(5);
+  }
+  .shift-t6 {
+    @include shift(6);
+  }
+//  .shift-t7 {
+//    @include shift(7);
+//  }
+//  .shift-t8 {
+//    @include shift(8);
+//  }
+//  .shift-t9 {
+//    @include shift(9);
+//  }
+//  .shift-t10 {
+//    @include shift(10);
+//  }
+//  .shift-t11 {
+//    @include shift(11);
+//  }
+//  .shift-t12 {
+//    @include shift(12);
+//  }
+}
+@include media($md-screen){
+//  .col-m12 {
+//    @include span-columns(12);
+//  }
+//  .col-m11 {
+//    @include span-columns(11);
+//  }
+  .col-m10 {
+    @include span-columns(10);
+  }
+  .col-m9 {
+    @include span-columns(9);
+  }
+  .col-m8 {
+    @include span-columns(8);
+  }
+  .col-m7 {
+    @include span-columns(7);
+  }
+  .col-m6 {
+    @include span-columns(6);
+  }
+  .col-m5 {
+    @include span-columns(5);
+  }
+  .col-m4 {
+    @include span-columns(4);
+  }
+  .col-m3 {
+    @include span-columns(3);
+  }
+  .col-m2 {
+    @include span-columns(2);
+  }
+  .col-m1 {
+    @include span-columns(1);
+  }
+  
+  // Shift
+  .shift-m0 {
+    @include shift(0);
+  }
+  .shift-m1 {
+    @include shift(1);
+  }
+  .shift-m2 {
+    @include shift(2);
+  }
+  .shift-m3 {
+    @include shift(3);
+  }
+  .shift-m4 {
+    @include shift(4);
+  }
+  .shift-m5 {
+    @include shift(5);
+  }
+  .shift-m6 {
+    @include shift(6);
+  }
+  .shift-m7 {
+    @include shift(7);
+  }
+  .shift-m8 {
+    @include shift(8);
+  }
+  .shift-m9 {
+    @include shift(9);
+  }
+  .shift-m10 {
+    @include shift(10);
+  }
+//  .shift-m11 {
+//    @include shift(11);
+//  }
+//  .shift-m12 {
+//    @include shift(12);
+//  }
+}
+@include media($lg-screen){
+  .col-l12 {
+    @include span-columns(12);
+  }
+  .col-l11 {
+    @include span-columns(11);
+  }
+  .col-l10 {
+    @include span-columns(10);
+  }
+  .col-l9 {
+    @include span-columns(9);
+  }
+  .col-l8 {
+    @include span-columns(8);
+  }
+  .col-l7 {
+    @include span-columns(7);
+  }
+  .col-l6 {
+    @include span-columns(6);
+  }
+  .col-l5 {
+    @include span-columns(5);
+  }
+  .col-l4 {
+    @include span-columns(4);
+  }
+  .col-l3 {
+    @include span-columns(3);
+  }
+  .col-l2 {
+    @include span-columns(2);
+  }
+  .col-l1 {
+    @include span-columns(1);
+  }
+  
+  // Shift
+  .shift-l0 {
+    @include shift(0);
+  }
+  .shift-l1 {
+    @include shift(1);
+  }
+  .shift-l2 {
+    @include shift(2);
+  }
+  .shift-l3 {
+    @include shift(3);
+  }
+  .shift-l4 {
+    @include shift(4);
+  }
+  .shift-l5 {
+    @include shift(5);
+  }
+  .shift-l6 {
+    @include shift(6);
+  }
+  .shift-l7 {
+    @include shift(7);
+  }
+  .shift-l8 {
+    @include shift(8);
+  }
+  .shift-l9 {
+    @include shift(9);
+  }
+  .shift-l10 {
+    @include shift(10);
+  }
+  .shift-l11 {
+    @include shift(11);
+  }
+  .shift-l12 {
+    @include shift(12);
+  }
+}
+
+.centered {
+  text-align: center;
+}
+

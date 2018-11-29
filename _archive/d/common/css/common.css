@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* ==========================================
+common.css
+========================================== */
+
+/* base css
+========================================== */
+@import url("/d/common/css/reset.css");
+@import url("/d/common/css/fonts.css");
+@import url("/d/common/css/base.css");
+@import url("/d/common/css/jquery.bxslider.css");
+@import url("/d/common/css/jquery.bxslider.customized.css");
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after,
+.container_16:before,
+.container_16:after {/* 960.css overwrite */
+	content: " ";
+	display:block;
+	clear:both;
+	height:0;
+	visiblity: hidden;
+	font-size: 0px;
+	line-height: 0px;
+}

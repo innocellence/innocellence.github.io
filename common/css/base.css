@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* ==========================================
+base.css
+========================================== */
+
+/* common
+========================================== */
+body {
+	color: #333;
+	webkit-text-size-adjust: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #ee4036;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #ee4036;
+}
+
+p, #privacy-policy, #disclaimer {
+	font: 15px 'RopaSansRegular', Arial, sans-serif;
+	line-height: 1.2em;
+	margin-bottom: 1.4em;
+}
+
+h2 {
+	display: block;
+	font: 28px/34px 'Glegoo';
+	text-shadow: 0px 2px 0px #fff;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	display: block;
+	font: 18px 'Glegoo';
+	margin: 0 0 15px 0;
+}
+
+h4 {
+display: block;
+font: 14px 'Glegoo';
+margin: 0 0 10px 0;
+}
+
+.container_16 .grid_3w {
+	width: 168px !important;
+}
+
+#global-header {
+	font: 15px Arial, sans-serif;
+	color: #333;
+	text-shadow: 0px 2px 0px #fff;
+}
+
+.caption-center {
+	text-align: center;
+}
+
+.bullets {
+	font: 15px 'RopaSansRegular', Arial, sans-serif;
+	line-height: 1.4em;
+	margin-bottom: 25px;
+}
+
+.decimal {
+	font: 15px 'RopaSansRegular', Arial, sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 25px;	
+	list-style-type:decimal;
+}
+
+ol.decimal {
+	margin-left: 40px;
+}
+
+/*.bullets li:before {
+	content:"\2022 \00A0";
+	color: #ee4036;
+	margin-right: 20px;
+	font-size: 150%;
+}*/
+.bullets li {
+	padding-left: 32px;
+	background: url(/d/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
+}
+
+.decimal li:before {
+	font-size: 150%;
+}
+
+.decimal li: {
+	padding-left:10px;
+}
+
+*:first-child+html .bullets li{
+	padding-left: 32px;
+	background: url(/d/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
+} /* for IE 7*/
+
+figcaption {
+	display: block;
+	font: 15px'Glegoo';
+	padding: 10px 0;
+	text-align: center;
+}
+
+.itunes-button{
+	overflow: hidden;
+	width: 140px;
+}
+
+.itunes-button a{
+	display: block;
+	height: 50px;
+	width: 280px;
+}
+
+.itunes-button a:hover img{
+	margin-left:-50%;
+}
+
+.download-job-description a{
+	display: block;
+	min-height: 23px;
+	padding-left: 36px;
+	background: url(/d/common/images/page-artifacts/contact-us/download-button.png) no-repeat -22px 0 transparent;
+}
+
+section#main img{
+	max-height:100%;
+	min-width:100%;
+	width:100%;
+}
+
+#page-top {
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	font-size: 77%;
+	filter: alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;
+}
+
+#page-top a {
+	background: #333;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+}
+
+#page-top a:hover {
+	text-decoration: none;
+	background: #f0f0f0;
+	color: #333;
+}
+
+.mg40top {
+	margin-top:40px;
+}
