@@ -12,7 +12,7 @@ disqus_shortname: innocellence
 
 # URL Prefixing
 url: http://innocellence.com
-baseurl: /d
+baseurl: 
 blogurl: blog.innocellence.com
 
 #port for Jekyll Serve
@@ -24,6 +24,10 @@ port: 9822
 sass:
   sass_dir: assets/_sass
   style: compressed
+  
+#Plugins
+plugins:  
+  - jekyll-redirect-from  
   
 #Defaults
 defaults:
@@ -41,14 +45,25 @@ defaults:
       layout: "blog"
       category: "blog"
       lang: "en" 
+    
+  - 
+    scope: 
+      path: ''
+      type: 'pages'
+    values:
+      lang: en
+  
   -
     scope:
-      path: "blog"
-      type: "posts"
+      path: 'en'
     values:
-      layout: "blog-post"
-      category: "blog"
-      lang: "en"     
+      lang: en 
+  
+  -
+    scope:
+      path: 'cn'
+    values:
+      lang: zh       
       
 #Set Syntax Highlighter
 highlighter: pygments

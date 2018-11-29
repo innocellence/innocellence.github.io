@@ -1,6 +1,6 @@
 ---
 title: 3 Reasons Why Your Business Needs a Mobile App
-image: /d/blog/images/7910370882_eeaed9b952_k.png
+image: blog/images/7910370882_eeaed9b952_k.png
 tag: [development, mobile app, mobile, mobile strategy, strategy, digital consultation]
 exclude: true
 ---

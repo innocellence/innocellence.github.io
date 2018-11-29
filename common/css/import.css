@@ -6,7 +6,7 @@ import.css
 
 /* base
 ========================================== */
-@import url("/d/common/css/960.css");
-@import url("/d/common/css/pc.css");
-@import url("/d/common/css/footer.css");
-@import url("/d/common/css/globalnavi.css");
+@import url("/common/css/960.css");
+@import url("/common/css/pc.css");
+@import url("/common/css/footer.css");
+@import url("/common/css/globalnavi.css");

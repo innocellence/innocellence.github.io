@@ -95,10 +95,10 @@ var content;
 $(window).bind("load", function () {
     /* ----- bxSlider */
     //    content = '<div id="slider1">';
-    //    content += '<div class="slider_row" style="display:none;"><figure><a href="/d/en/contact-us/index.html"><img src="/d/common/images/banners/Banners-Singapore_400.png" alt=""></a></figure></div>';
-    //    content += '<div class="slider_row" style="display:none;"><figure><a href="/d/en/showcase/index.html#reach"><img src="/d/common/images/banners/Banners-Reach_400.png" alt=""></a></figure></div>';
-    //    content += '<div class="slider_row" style="display:none;"><figure><a href="/d/en/what-we-do/innovation-lab.html"><img src="/d/common/images/banners/Banners-Lab_400.png" alt=""></a></figure></div>';
-    //    content += '<div class="slider_row" style="display:none;"><figure><a href="/d/en/contact-us/index.html"><img src="/d/common/images/banners/Banners-global_400.png" alt=""></a></figure></div>';
+    //    content += '<div class="slider_row" style="display:none;"><figure><a href="en/contact-us/index.html"><img src="/common/images/banners/Banners-Singapore_400.png" alt=""></a></figure></div>';
+    //    content += '<div class="slider_row" style="display:none;"><figure><a href="en/showcase/index.html#reach"><img src="/common/images/banners/Banners-Reach_400.png" alt=""></a></figure></div>';
+    //    content += '<div class="slider_row" style="display:none;"><figure><a href="en/what-we-do/innovation-lab.html"><img src="/common/images/banners/Banners-Lab_400.png" alt=""></a></figure></div>';
+    //    content += '<div class="slider_row" style="display:none;"><figure><a href="en/contact-us/index.html"><img src="/common/images/banners/Banners-global_400.png" alt=""></a></figure></div>';
     //    content += '</div>';
 
     

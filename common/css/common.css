@@ -6,11 +6,11 @@ common.css
 
 /* base css
 ========================================== */
-@import url("/d/common/css/reset.css");
-@import url("/d/common/css/fonts.css");
-@import url("/d/common/css/base.css");
-@import url("/d/common/css/jquery.bxslider.css");
-@import url("/d/common/css/jquery.bxslider.customized.css");
+@import url("/common/css/reset.css");
+@import url("/common/css/fonts.css");
+@import url("/common/css/base.css");
+@import url("/common/css/jquery.bxslider.css");
+@import url("/common/css/jquery.bxslider.customized.css");
 
 .clearfix:before,
 .clearfix:after,

@@ -1,6 +1,6 @@
 ---
 title: 7 Essential Social Listening Benefits Your Company Should Know About
-image: /d/blog/images/8583948123_5f77f55c72_k.png
+image: blog/images/8583948123_5f77f55c72_k.png
 tag: [insight, social listening, strategy, seo, social media]
 exclude: true
 ---

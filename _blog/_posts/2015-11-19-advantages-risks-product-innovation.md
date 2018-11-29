@@ -1,6 +1,6 @@
 ---
 title: What Are the Advantages and Risks of Product Innovation — And How Can a Digital Innovation Consultant Help?
-image: /d/blog/images/6085347780_1a6eba300c_b.png
+image: blog/images/6085347780_1a6eba300c_b.png
 tag: [strategy, innovation, product innovation, digital consultation]
 exclude: true
 ---

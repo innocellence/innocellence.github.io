@@ -89,7 +89,7 @@ ol.decimal {
 }*/
 .bullets li {
 	padding-left: 32px;
-	background: url(/d/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
+	background: url(/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
 }
 
 .decimal li:before {
@@ -102,7 +102,7 @@ ol.decimal {
 
 *:first-child+html .bullets li{
 	padding-left: 32px;
-	background: url(/d/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
+	background: url(/common/images/navigation/list-bullet.png) no-repeat 0 8px transparent;
 } /* for IE 7*/
 
 figcaption {
@@ -131,7 +131,7 @@ figcaption {
 	display: block;
 	min-height: 23px;
 	padding-left: 36px;
-	background: url(/d/common/images/page-artifacts/contact-us/download-button.png) no-repeat -22px 0 transparent;
+	background: url(/common/images/page-artifacts/contact-us/download-button.png) no-repeat -22px 0 transparent;
 }
 
 section#main img{

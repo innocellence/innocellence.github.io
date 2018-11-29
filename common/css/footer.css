@@ -6,7 +6,7 @@ footer.css
 
 /*
 ========================================== */
-#global-footer{background:url(/d/common/images/footer/footer-bg.jpg) repeat;
+#global-footer{background:url(/common/images/footer/footer-bg.jpg) repeat;
 	-webkit-box-shadow: inset  0px 4px 20px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow:    inset  0px 4px 20px rgba(0, 0, 0, 0.4);
 	box-shadow:    inset  0px 4px 20px rgba(0, 0, 0, 0.4);
@@ -17,7 +17,7 @@ footer.css
 #global-footer .company figure{margin-bottom:20px;}
 #global-footer .company h3{margin-bottom: 25px;}
 #global-footer .company p{margin-bottom:25px;}
-#global-footer hr{background:url(/d/common/images/footer/footer-dot-line.png) repeat-x 0 0; height:1px;}
+#global-footer hr{background:url(/common/images/footer/footer-dot-line.png) repeat-x 0 0; height:1px;}
 #global-footer #footer-navi-area{padding-top:15px; padding-bottom:20px;}
 #global-footer #footer-navi,
 #global-footer #footer-navi #disclaimer,
@@ -26,7 +26,7 @@ footer.css
 #global-footer #footer-navi #privacy-policy{padding-left:15px;}
 #global-footer #footer-navi #disclaimer{border-right:solid 1px #ffffff;}
 
-#company-information .clock_face{width:57px; height:57px; background-image:url(/d/common/images/footer/clock-face.png); position:relative;}
+#company-information .clock_face{width:57px; height:57px; background-image:url(/common/images/footer/clock-face.png); position:relative;}
 #company-information .clock_hours,
 #company-information .clock_minutes{width:57px; height:57px; position:absolute; top:0; left:0;}
 

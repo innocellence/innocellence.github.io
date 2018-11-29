@@ -7,15 +7,15 @@ globalnavi.css
 /* navigation
 ========================================== */
 #global-navi li a, #sub-navi li a, #lang-navi li a{color:#333333;}
-#global-navi li.active a, #sub-navi li.active a{background:url(/d/common/images/navigation/nav-highlight-line.jpg) repeat-x 0 bottom;}
+#global-navi li.active a, #sub-navi li.active a{background:url(/common/images/navigation/nav-highlight-line.jpg) repeat-x 0 bottom;}
 #global-navi li.active a, #sub-navi li.active a, #lang-navi li.active a{font-weight:bold;}
 #global-navi li.last, #sub-navi li.last{margin-right:0;}
-#global-navi a:hover, #sub-navi a:hover{text-decoration:none; background:url(/d/common/images/navigation/nav-highlight-line.jpg) repeat-x 0 bottom;}
+#global-navi a:hover, #sub-navi a:hover{text-decoration:none; background:url(/common/images/navigation/nav-highlight-line.jpg) repeat-x 0 bottom;}
 #sub-navi-area, #gnavi-01 ul, #gnavi-02 ul{display:none;}
 
 /* global navigation
 ========================================== */
-#global-navi-area{height:91px; background:url(/d/common/images/navigation/nav-lower-line.jpg) repeat-x 0 89px;}
+#global-navi-area{height:91px; background:url(/common/images/navigation/nav-lower-line.jpg) repeat-x 0 89px;}
 #global-navi li{float:left;}
 #global-navi li a{display:block; margin-right:30px; padding-top:40px; height:51px;}
 
@@ -30,9 +30,9 @@ globalnavi.css
 
 /* sub navigation (ref: base.js)
 ========================================== */
-#sub-navi-area{height:40px; background:url(/d/common/images/navigation/nav-lower-line.jpg) repeat-x 0 38px #f4f4f4;}
+#sub-navi-area{height:40px; background:url(/common/images/navigation/nav-lower-line.jpg) repeat-x 0 38px #f4f4f4;}
 #sub-navi ul{margin:0 auto;}
-#sub-navi li{float:left; background:url(/d/common/images/navigation/nav-vertical-line.gif) no-repeat right 3px;}
+#sub-navi li{float:left; background:url(/common/images/navigation/nav-vertical-line.gif) no-repeat right 3px;}
 #sub-navi li.last{background:none;}
 #sub-navi li a{display:block; margin:0 15px; padding-top:10px; height:30px;}
 /* for no-jquery */

@@ -3,9 +3,9 @@
 /* ==========================================
 pc.css
 ========================================== */
-@import url("/d/common/css/960.css");
-@import url("/d/common/css/footer.css");
-@import url("/d/common/css/globalnavi.css");
+@import url("/common/css/960.css");
+@import url("/common/css/footer.css");
+@import url("/common/css/globalnavi.css");
 
 /* common
 ========================================== */
@@ -28,24 +28,24 @@ body{background-color:#f4f4f4;}
 /* #main
 ========================================== */
 section#main{margin-top:190px; margin-bottom:80px;}
-section#main hr{margin:40px 0; height:18px; background:url(/d/common/images/page-artifacts/dividers/divider.png) no-repeat 0 0; width:100%;}
-*:first-child+html section#main hr{display:list-item; list-style:url(/d/common/images/page-artifacts/dividers/divider.png) inside; filter:alpha(opacity=0); margin-left:-10px; width:0;} /* for IE7 */
-section#main hr.vertical{margin:0 24px; height:284px; background:url(/d/common/images/page-artifacts/dividers/divider-v.png) no-repeat 0 0;}
-*:first-child+html section#main hr.vertical{margin:0; padding:0 24px; display:list-item; list-style:url(/d/common/images/page-artifacts/dividers/divider-v.png) inside; filter:alpha(opacity=0);}
+section#main hr{margin:40px 0; height:18px; background:url(/common/images/page-artifacts/dividers/divider.png) no-repeat 0 0; width:100%;}
+*:first-child+html section#main hr{display:list-item; list-style:url(/common/images/page-artifacts/dividers/divider.png) inside; filter:alpha(opacity=0); margin-left:-10px; width:0;} /* for IE7 */
+section#main hr.vertical{margin:0 24px; height:284px; background:url(/common/images/page-artifacts/dividers/divider-v.png) no-repeat 0 0;}
+*:first-child+html section#main hr.vertical{margin:0; padding:0 24px; display:list-item; list-style:url(/common/images/page-artifacts/dividers/divider-v.png) inside; filter:alpha(opacity=0);}
 section#main article p{margin-bottom:1.4em;}
 
 /* figures bottom shadow
 ========================================== */
-.bottom-shadow{padding-bottom:40px; background: url(/d/common/images/page-artifacts/lab/460-image-shadow.png) no-repeat 0 bottom;}
+.bottom-shadow{padding-bottom:40px; background: url(/common/images/page-artifacts/lab/460-image-shadow.png) no-repeat 0 bottom;}
 
 /* slide figures
 ========================================== */
-.slide-images{padding-bottom:58px; background: url(/d/common/images/banners/banner-shadow.png) no-repeat 0 bottom;}
+.slide-images{padding-bottom:58px; background: url(/common/images/banners/banner-shadow.png) no-repeat 0 bottom;}
 section#main .slide-images + hr{margin-top:15px;}
 
 /* global presence page figures
 ========================================== */
-.presence article figure{padding:0 20px; background: url(/d/common/images/page-artifacts/global-presence/Full-460Shadow.png) no-repeat 0 0;}
+.presence article figure{padding:0 20px; background: url(/common/images/page-artifacts/global-presence/Full-460Shadow.png) no-repeat 0 0;}
 .presence article figure.alpha,
 .presence article figure.omega{margin-left:-20px; margin-bottom:35px; margin-top: 30px;}
 .presence article .alpha,
@@ -75,9 +75,9 @@ section#main .slide-images + hr{margin-top:15px;}
 #contact-map article figure{overflow:hidden;}
 #contact-map article figure a{display:block; height:290px; width:388px;}
 #contact-map figure a:hover img{margin-left:-50%;}
-#careers .right-line{padding-right: 30px; background:url(/d/common/images/page-artifacts/contact-us/job-center-div.png) no-repeat right 0;}
-section#main #careers hr{background:url(/d/common/images/page-artifacts/contact-us/job-dot-line.png) repeat-x 0 0;}
-#contact-map .map-box{background:url(/d/common/images/page-artifacts/contact-us/map-shadow.png) no-repeat 0 bottom;}
+#careers .right-line{padding-right: 30px; background:url(/common/images/page-artifacts/contact-us/job-center-div.png) no-repeat right 0;}
+section#main #careers hr{background:url(/common/images/page-artifacts/contact-us/job-dot-line.png) repeat-x 0 0;}
+#contact-map .map-box{background:url(/common/images/page-artifacts/contact-us/map-shadow.png) no-repeat 0 bottom;}
 #contact-map .map-box article{background-color: #ffffff;}
 
 /* about you page figures
