@@ -2,6 +2,7 @@
 title: Thank You for Your Enquiry
 lang: en
 section: contact
+permalink: /en/contact/thank-you.html
 redirect_from:
   - /d/en/contact/thank-you.html
 ---
