@@ -1,10 +1,11 @@
 ---
 title: 快速原型设计
-lang: zh
 section: capabilities
 summary: We’ll help you evaluate emerging platforms and technologies, future-proof a digital solution, or create HTML prototypes to hasten digital product development.
 sub-title: 快捷高效走向市场
 lead: 想要保持产品领先于竞争对手的市场优势？请跟随我们，成为市场先驱者。 
+redirect_from:
+  - /d/cn/capabilities/rapid_prototyping.html
 ---
 
 <section>

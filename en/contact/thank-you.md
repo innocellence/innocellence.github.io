@@ -2,6 +2,8 @@
 title: Thank You for Your Enquiry
 lang: en
 section: contact
+redirect_from:
+  - /d/en/contact/thank-you.html
 ---
 
 <section class="thankyou">

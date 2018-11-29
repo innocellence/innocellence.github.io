@@ -47,7 +47,7 @@
           {% for menuitem in menu.menuitems %}
           <li><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
           {% endfor %}
-          <li><a href="{{site.baseurl}}/sitemap.html" target="_blank" title="Sitemap">站点地图</a></li>
+          <li><a href="{{site.baseurl}}/sitemap/" title="Sitemap">站点地图</a></li>
           <li class="copy-text">Copyright &copy; 2015 <a href="{{site.baseurl}}/cn/index.html">InnoCellence&nbsp;Systems&nbsp;Pte.&nbsp;Ltd.</a></li>
           <li>最后更新: {{ site.time | date: "%b %-d, %Y"  }}</li>
         </ul>
@@ -101,7 +101,7 @@
           {% for menuitem in menu.menuitems %}
           <li><a href="{{site.baseurl}}{{ menuitem.url }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
           {% endfor %}
-          <li><a href="{{site.baseurl}}/sitemap.html" target="_blank" title="Sitemap">Sitemap</a></li>
+          <li><a href="{{site.baseurl}}/sitemap/" title="Sitemap">Sitemap</a></li>
           <li class="copy-text">&copy; <a href="{{site.baseurl}}">InnoCellence&nbsp;Systems&nbsp;Pte.&nbsp;Ltd.</a> All&nbsp;rights&nbsp;reserved.</li>
           <li>Last Update: {{ site.time | date: "%b %-d, %Y"  }}</li>
         </ul>
@@ -111,4 +111,10 @@
   </div>
 </footer>
 {% endif %}
+
+<!-- Scripts -->
+<script src="{{ site.baseurl }}/assets/js/jquery/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+{% if page.section == 'contact' %}
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/contact-form-validate.js"></script>
+{% endif %}

@@ -3,6 +3,9 @@ title: Digitally Innovative | Globally Capable | Fully Integrated
 lang: en
 section: about
 summary: We take a user-centric approach that enables us to deliver engaging creative solutions to our clients worldwide. We have offices in Singapore, China, and Japan. a global digital systems innovator with offices in Singapore, China, and Japan. Through our user-centric ethos, we have deliver engaging creative solutions that produce business results. 
+redirect_from:
+  - /d/en/about/
+  - /d/en/about/index.html
 ---
 	
 <section>

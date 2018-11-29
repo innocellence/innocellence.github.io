@@ -1,10 +1,11 @@
 ---
 title: 设计 & 用户体验
-lang: zh
 section: capabilities
 summary: We apply the latest UI/UX design methodologies to every project and maintain a state-of-the-art Digital Innovation Lab for usability testing.
 sub-title: 实现最佳用户体验
 lead: 想要提供一个流畅且用户体验绝佳的产品？请跟随我们，成为产品缔造者。
+redirect_from:
+  - /d/cn/capabilities/design_user_experience.html
 ---
 
 <section>

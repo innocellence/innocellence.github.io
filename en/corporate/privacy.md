@@ -3,6 +3,8 @@ title: Privacy Policy
 lang: en
 section: corporate
 summary: InnoCellence Website Privacy Policy.
+redirect_from:
+  - /d/en/corporate/privacy.html
 ---
 
 <section>

@@ -1,10 +1,11 @@
 ---
 title: 数字化咨询
-lang: zh
 section: capabilities
 summary: Choose the right technologies for your business and overcome barriers to digital adoption through product innovation, market research, and content strategy.
 sub-title: 加速业务增长
 lead: 想要节省时间和金钱，走上了数字化的道路？请跟随我们，成为数字化革新者。
+redirect_from:
+  - /d/cn/capabilities/digital_consultation.html
 ---
     
 <section>

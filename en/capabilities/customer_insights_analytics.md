@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: Turn your customer insights into positive business results through digital tools including social listening, usage analysis, and big data insights.
 lead: Not evaluating and analyzing customer feedback about your products and services can hurt your brand image. <strong>We can change that.</strong> 
+redirect_from:
+  - /d/en/capabilities/customer_insights_analytics.html
 ---
 
 <section>

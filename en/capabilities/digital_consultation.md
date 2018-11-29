@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: Choose the right technologies for your business and overcome barriers to digital adoption through product innovation, market research, and content strategy.
 lead: Some companies waste so much time, energy, and resources "going digital" that it's a barrier to progress. <strong>They didn't work with us.</strong>
+redirect_from:
+  - /d/en/capabilities/digital_consultation.html
 ---
 
 <section>

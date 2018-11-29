@@ -1,8 +1,10 @@
 ---
 title: 端到端的解决方案满足企业所有的数字化需求
-lang: zh
 section: capabilities
 lead: 我们致力于提供数字化解决方案，推动业务发展，吸引企业品牌拥护者。
+redirect_from:
+  - /d/cn/capabilities/index.html
+  - /d/cn/capabilities/
 ---
 
 <section>

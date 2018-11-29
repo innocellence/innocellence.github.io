@@ -3,6 +3,8 @@ title: Excellence in Digital Innovation
 lang: en
 section: cn/index
 homepage: true
+redirect_from:
+  - /d/en/
 ---
 
 {% include module-hero.html %}

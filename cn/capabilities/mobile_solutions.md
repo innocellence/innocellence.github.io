@@ -1,10 +1,11 @@
 ---
 title: 移动解决方案
-lang: zh
 section: capabilities
 summary: We can develop the intuitive and user-friendly cross-platform apps, native apps, and mobile web solutions your business needs to fulfill its mobile strategy.
 sub-title: 拉近企业与员工和用户的距离
 lead: 想要抛弃设计呆板，功能不全，或者操作不便的应用？请跟随我们，成为最佳实践者。 
+redirect_from:
+  - /d/cn/capabilities/mobile_solutions.html
 ---
 
 <section>

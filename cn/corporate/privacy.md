@@ -1,8 +1,9 @@
 ---
 title: 隐私政策
-lang: zh
 section: corporate
 summary: InnoCellence Website Privacy Policy.
+redirect_from:
+  - /d/cn/corporate/privacy.html
 ---
 
 <section>

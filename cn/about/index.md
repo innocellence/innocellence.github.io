@@ -1,8 +1,10 @@
 ---
 title: 关于我们
-lang: zh
 section: about
 summary: We take a user-centric approach that enables us to deliver engaging creative solutions to our clients worldwide. We have offices in Singapore, China, and Japan. a global digital systems innovator with offices in Singapore, China, and Japan. Through our user-centric ethos, we have deliver engaging creative solutions that produce business results. 
+redirect_from:
+  - /d/cn/about/
+  - /d/cn/about/index.html
 ---
 	
 <section>

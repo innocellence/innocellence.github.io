@@ -1,10 +1,11 @@
 ---
 title: 网站 & 应用开发
-lang: zh
 section: capabilities
 summary: Develop a website that's beautifully designed, responsive, SEO optimized, and mobile-ready with InnoCellence.
 sub-title: 创造愉悦的可量化的用户体验
 lead: 想要公司官网拥有集搜索优化功能，响应式设计和精美网页设计于一身？请跟随我们，成为品牌树立者。
+redirect_from:
+  - /d/cn/capabilities/website_application_development.html
 ---
 
 <section>

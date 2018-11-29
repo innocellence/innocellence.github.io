@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: We apply the latest UI/UX design methodologies to every project and maintain a state-of-the-art Digital Innovation Lab for usability testing.
 lead: Some companies struggle to deliver a smooth and engaging User Experience (UX) to customers. <strong>Our clients don't have that problem.</strong>  
+redirect_from:
+  - /d/en/capabilities/design_user_experience.html
 ---
 
 <section>

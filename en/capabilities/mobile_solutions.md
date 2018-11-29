@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: We can develop the intuitive and user-friendly cross-platform apps, native apps, and mobile web solutions your business needs to fulfill its mobile strategy.
 lead: Creating an app that freezes, lacks functionality, or frustrates customers can hurt your brand. <strong>Go mobile the right way — With us.</strong>  
+redirect_from:
+  - /d/en/capabilities/mobile_solutions.html
 ---
 
 <section>

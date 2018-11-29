@@ -3,6 +3,9 @@ title: Contact Us
 lang: en
 section: contact
 summary: Need an agency that can deliver innovative digital solutions customized to your company’s requirements? Then InnoCellence is the creative partner for you.
+redirect_from:
+  - /d/en/contact/index.html
+  - /d/en/contact/
 ---
 <section class="full">
   <div class="container">

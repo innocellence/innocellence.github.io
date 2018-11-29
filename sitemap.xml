@@ -1,9 +1,12 @@
 ---
 layout: none
 exclude: true
+permalink: /sitemap.xml
+redirect_from:
+  - /d/sitemap.xml
 ---
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign sorted_pages = (site.pages | sort: 'title') %}
+{% assign sorted_pages = site.pages | sort: 'title' %}
 {% for page in sorted_pages %}
 {% if page.exclude != true and page.lang == 'en' %}
   <url>

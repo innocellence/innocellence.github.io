@@ -1,7 +1,8 @@
 ---
 title: Thank You for Your Enquiry
-lang: zh
 section: contact
+redirect_from:
+  - /d/cn/contact/thank-you.html
 ---
 
 <section class="thankyou">

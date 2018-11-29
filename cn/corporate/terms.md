@@ -1,8 +1,9 @@
 ---
 title: 条款 & 条件
-lang: zh
 section: corporate
 summary: InnoCellence Website Use Terms & Conditions.
+redirect_from:
+  - /d/cn/corporate/terms.html
 ---
  <section>
   <div class="container">

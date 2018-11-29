@@ -3,6 +3,8 @@ title: Terms & Conditions
 lang: en
 section: corporate
 summary: InnoCellence Website Use Terms & Conditions.
+redirect_from:
+  - /d/en/corporate/terms.html
 ---
  <section>
   <div class="container">

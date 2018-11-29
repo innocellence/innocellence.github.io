@@ -3,6 +3,9 @@ title: Our Capabilities
 lang: en
 section: capabilities
 lead: Our end-to-end delivery capabilities enable us to deliver digitally innovative solutions that'll transform your business.
+redirect_from:
+  - /d/en/capabilities/index.html
+  - /d/en/capabilities/
 ---
 
 <section>

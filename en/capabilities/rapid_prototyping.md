@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: We’ll help you evaluate emerging platforms and technologies, future-proof a digital solution, or create HTML prototypes to hasten digital product development.
 lead: Companies that stay stuck in development for too long risk losing the race to market against competitors. <strong>We won't let that happen.</strong> 
+redirect_from:
+  - /d/en/capabilities/rapid_prototyping.html
 ---
 
 <section>

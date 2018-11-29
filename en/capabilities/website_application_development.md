@@ -4,6 +4,8 @@ lang: en
 section: capabilities
 summary: Develop a website that's beautifully designed, responsive, SEO optimized, and mobile-ready with InnoCellence.
 lead: Having a website that's not Search Engine Optimized (SEO), unresponsive, and unattractive can hurt your company's brand perception and sales. <strong>We can fix that.</strong> 
+redirect_from:
+  - /d/en/capabilities/website_application_development.html
 ---
 
 <section>

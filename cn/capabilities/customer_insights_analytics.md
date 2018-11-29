@@ -1,10 +1,11 @@
 ---
 title: 客户洞察 & 分析
-lang: zh
 section: capabilities
 summary: Turn your customer insights into positive business results through digital tools including social listening, usage analysis, and big data insights.
 sub-title: 提升品牌市场占有率
 lead: 想要时刻了解市场反馈和用户心声，保持品牌形象？请根随我们，成为市场倾听者。
+redirect_from:
+  - /d/cn/capabilities/customer_insights_analytics.html
 ---
 
 <section>

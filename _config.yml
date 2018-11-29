@@ -29,6 +29,9 @@ sass:
 plugins:  
   - jekyll-redirect-from  
   
+#Permalinks
+permalink: /:categories/:year/:month/:day/:slug/  
+  
 #Defaults
 defaults:
   -

@@ -1,8 +1,10 @@
 ---
 title: 致力于卓越的数字化创新
-lang: zh
 section: contact
 summary: 我们是InnoCellence，数字创新者。我们为您的业务挑战创建数字化解决方案：用户体验设计，移动应用和创新咨询。
+redirect_from:
+  - /d/cn/contact/index.html
+  - /d/cn/contact/
 ---
 
 <section class="full">
