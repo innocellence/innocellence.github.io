@@ -65,9 +65,9 @@ redirect_from:
       </label>
       <textarea name="message" id="contact-form-message" required></textarea>
       <input type="submit" value="Submit">
-      <input type="hidden" name="_next" value="{{ site.baseurl }}/en/contact/thank-you.html" />
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/en/contact/thank-you/" />
       <input type="text" name="_gotcha" style="display:none" />
-      <p>By submitting this form you agree to our <a href="{{ site.baseurl }}/en/corporate/terms.html">Terms &amp; Conditions</a> and <a href="{{ site.baseurl }}/en/corporate/privacy.html">Privacy Policy</a>.</p>
+      <p>By submitting this form you agree to our <a href="{{ site.baseurl }}/en/corporate/terms/">Terms &amp; Conditions</a> and <a href="{{ site.baseurl }}/en/corporate/privacy/">Privacy Policy</a>.</p>
     </form>
   </div>
 </section>

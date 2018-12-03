@@ -14,7 +14,7 @@ redirect_from:
       <h5 class="section-title">Our Vision</h5>
       <h2>To be the world’s leading digital innovator</h2>
       <p>We believe that innovative design and technology have the power to create digital products that improve people's lives.</p>
-      <p><a href="../capabilities/" title="Our Capabilities"><i class="fa fa-angle-right"></i> Find out how we do it</a></p>
+      <p><a href="{{ site.baseurl }}capabilities/" title="Our Capabilities"><i class="fa fa-angle-right"></i> Find out how we do it</a></p>
     </div>
     <div class="col-t3 col-m3 col-l4">
       <img src="{{site.baseurl}}/assets/img/about/about_vision.png">
@@ -26,7 +26,7 @@ redirect_from:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <p class="lead">InnoCellence is a leading digital systems innovator headquartered in <a href="../contact/index.html" title="Contact Us">Singapore</a> with offices in <a href="../contact/index.html" title="Contact Us">China</a> and <a href="../contact/index.html" title="Contact Us">Japan</a>.</p>
+        <p class="lead">InnoCellence is a leading digital systems innovator headquartered in <a href="{{ site.baseurl }}contact/" title="Contact Us">Singapore</a> with offices in <a href="{{ site.baseurl }}contact/" title="Contact Us">China</a> and <a href="{{ site.baseurl }}contact/" title="Contact Us">Japan</a>.</p>
       </div>
     </div>
     <div class="row">

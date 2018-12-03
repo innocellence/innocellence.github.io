@@ -13,7 +13,7 @@ redirect_from:
       <h5 class="section-title">我们的愿景</h5>
       <h2>成为顶尖的数字化创新者</h2>
       <p>我们相信通过创意设计和技术革新能够改善人类生活</p>
-      <p><a href="../capabilities/" title="Our Capabilities"><i class="fa fa-angle-right"></i> 我们如何实现</a></p>
+      <p><a href="{{ site.baseurl }}capabilities/" title="Our Capabilities"><i class="fa fa-angle-right"></i> 我们如何实现</a></p>
     </div>
     <div class="col-t3 col-m3 col-l4">
       <img src="{{site.baseurl}}/assets/img/about/about_vision.png">
@@ -25,7 +25,7 @@ redirect_from:
   <div class="container">
     <div class="row">
       <div class="col-12">
-      <p class="lead">英诺瑞新是一家总部位于<a href="../contact/index.html" title="联系我们">新加坡</a>，分公司位于<a href="../contact/index.html" title="联系我们">中国</a>和<a href="../contact/index.html" title="联系我们">日本</a>，提供顶尖的数字化创新服务的企业。</p>
+      <p class="lead">英诺瑞新是一家总部位于<a href="{{ site.baseurl }}contact/" title="联系我们">新加坡</a>，分公司位于<a href="{{ site.baseurl }}contact/" title="联系我们">中国</a>和<a href="{{ site.baseurl }}contact/" title="联系我们">日本</a>，提供顶尖的数字化创新服务的企业。</p>
       </div>
     </div>
     <div class="row">
