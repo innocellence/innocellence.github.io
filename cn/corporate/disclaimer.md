@@ -1,5 +1,5 @@
 ---
-title: 条款 & 条件
+title: 免责声明
 section: corporate
 summary: InnoCellence Website Use Terms & Conditions.
 redirect_from:

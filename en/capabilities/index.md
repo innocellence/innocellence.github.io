@@ -20,7 +20,7 @@ Select a service below for more information.
 <section>
   <ul class="flex-grid card-list centered">
     <li class="card-item">
-      <a class="card" href="{{ site.baseurl }}/digital_consultation/" title="Digital Consultation">
+      <a class="card" href="{{ site.baseurl }}/en/capabilities/digital_consultation/" title="Digital Consultation">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_DC.png">
         <div class="content">
           <h4 class="title">Digital Consulting &amp; Content Creation</h4>
@@ -28,7 +28,7 @@ Select a service below for more information.
       </a>  
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.baseurl }}/design_user_experience/" title="Design &amp; User Experience">
+      <a class="card" href="{{ site.baseurl }}/en/capabilities/design_user_experience/" title="Design &amp; User Experience">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_UX.png">
         <div class="content">
           <h4 class="title">Creative Design &amp; User Experience</h4>
@@ -36,7 +36,7 @@ Select a service below for more information.
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.baseurl }}/rapid_prototyping/" title="Rapid Prototyping">
+      <a class="card" href="{{ site.baseurl }}/en/capabilities/rapid_prototyping/" title="Rapid Prototyping">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_RP.png">
         <div class="content">
           <h4 class="title">Rapid Prototyping</h4>
@@ -44,7 +44,7 @@ Select a service below for more information.
       </a>
     </li>
     <li class="card-item">
-        <a class="card" href="{{ site.baseurl }}/mobile_solutions/" title="Mobile Solutions">
+        <a class="card" href="{{ site.baseurl }}/en/capabilities/mobile_solutions/" title="Mobile Solutions">
           <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_MS.png">
         <div class="content">
           <h4 class="title">Mobile Solutions</h4>
@@ -52,7 +52,7 @@ Select a service below for more information.
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.baseurl }}/website_application_development/" title="Website &amp; Application Development">
+      <a class="card" href="{{ site.baseurl }}/en/capabilities/website_application_development/" title="Website &amp; Application Development">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_AP.png">
         <div class="content">
           <h4 class="title">Website &amp; Application Development</h4>
@@ -60,7 +60,7 @@ Select a service below for more information.
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.baseurl }}/customer_insights_analytics/" title="Customer Insights &amp; Analytics">
+      <a class="card" href="{{ site.baseurl }}/en/capabilities/customer_insights_analytics/" title="Customer Insights &amp; Analytics">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_CI.png">
         <div class="content">
           <h4 class="title">Customer Insights &amp; Analytics</h4>

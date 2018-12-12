@@ -43,8 +43,8 @@ about_subnav:
 corporate:
 - title: 协议
   menuitems:
-    - title: 条款 & 条件
-      url: /cn/corporate/terms/
+    - title: 免责声明
+      url: /cn/corporate/disclaimer/
     - title: 隐私政策
       url: /cn/corporate/privacy/
 

@@ -67,7 +67,7 @@ redirect_from:
       <input type="submit" value="Submit">
       <input type="hidden" name="_next" value="{{ site.baseurl }}/cn/contact/thank-you/" />
       <input type="text" name="_gotcha" style="display:none" />
-      <p>我已阅读并同意<a href="{{ site.baseurl }}/cn/corporate/disclaimer/">条款条件</a>与<a href="{{ site.baseurl }}/en/corporate/privacy/">隐私政策</a>.</p>
+      <p>我已阅读并同意<a href="{{ site.baseurl }}/cn/corporate/disclaimer/">免责声明</a>与<a href="{{ site.baseurl }}/en/corporate/privacy/">隐私政策</a>.</p>
     </form>
   </div>
 </section>

@@ -18,7 +18,7 @@ redirect_from:
 <section>
   <ul class="flex-grid card-list centered">
     <li class="card-item">
-      <a class="card" href="{{ site.bseurl }}/digital_consultation/" title="Digital Consultation">
+      <a class="card" href="{{ site.bseurl }}/cn/capabilities/digital_consultation/" title="Digital Consultation">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_DC.png">
         <div class="content">
           <h3 class="title">数字化咨询</h3>
@@ -27,7 +27,7 @@ redirect_from:
       </a>  
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.bseurl }}/design_user_experience/" title="Design &amp; User Experience">
+      <a class="card" href="{{ site.bseurl }}/cn/capabilities/design_user_experience/" title="Design &amp; User Experience">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_UX.png">
         <div class="content">
           <h3 class="title">设计 &amp; 用户体验</h3>
@@ -36,7 +36,7 @@ redirect_from:
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.bseurl }}/rapid_prototyping/" title="Rapid Prototyping">
+      <a class="card" href="{{ site.bseurl }}/cn/capabilities/rapid_prototyping/" title="Rapid Prototyping">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_RP.png">
         <div class="content">
           <h3 class="title">快速原型设计</h3>
@@ -45,7 +45,7 @@ redirect_from:
       </a>
     </li>
     <li class="card-item">
-        <a class="card" href="{{ site.bseurl }}/mobile_solutions/" title="Mobile Solutions">
+        <a class="card" href="{{ site.bseurl }}/cn/capabilities/mobile_solutions/" title="Mobile Solutions">
           <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_MS.png">
         <div class="content">
           <h3 class="title">移动解决方案</h3>
@@ -54,7 +54,7 @@ redirect_from:
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.bseurl }}/website_application_development/" title="Website &amp; Application Development">
+      <a class="card" href="{{ site.bseurl }}/cn/capabilities/website_application_development/" title="Website &amp; Application Development">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_AP.png">
         <div class="content">
           <h3 class="title">网站 &amp; 应用开发</h3>
@@ -63,7 +63,7 @@ redirect_from:
       </a>
     </li>
     <li class="card-item">
-      <a class="card" href="{{ site.bseurl }}/customer_insights_analytics/" title="Customer Insights &amp; Analytics">
+      <a class="card" href="{{ site.bseurl }}/cn/capabilities/customer_insights_analytics/" title="Customer Insights &amp; Analytics">
         <img class="image" src="{{site.baseurl}}/assets/img/capabilities/capabilities_CI.png">
         <div class="content">
           <h3 class="title">客户洞察 &amp; 分析</h3>
