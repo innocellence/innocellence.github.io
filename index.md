@@ -5,6 +5,7 @@ section: cn/index
 homepage: true
 redirect_from:
   - /d/en/
+  - /blog/
 ---
 
 {% include module-hero.html %}

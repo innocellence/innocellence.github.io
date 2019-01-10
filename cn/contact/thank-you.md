@@ -1,7 +1,6 @@
 ---
 title: Thank You for Your Enquiry
 section: contact
-permalink: /cn/contact/thank-you.html
 redirect_from:
   - /d/cn/contact/thank-you.html
 ---
