@@ -3,7 +3,6 @@ layout: base
 exclude: true
 redirect_from:
   - /d/sitemap.html
-  - /sitemap.html
 ---
 <section>
   <div class="container">
