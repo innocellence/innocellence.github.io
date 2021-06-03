@@ -1,0 +1,182 @@
+$image-sm-break-size: $sm;
+$image-break-size: 1080px;
+$font-sm-break-size: 600px;
+$font-md-break-size: 960px;
+$hero-font-bg: transparentize($red, 0);
+
+section.hero {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  @include clearfix;
+  overflow: hidden;
+  text-align: center;
+  
+  @include media($font-sm-break-size) {
+    min-height: 600px;
+    max-height: 680px;
+  }
+}
+
+.hero {
+  .hero-inner {
+    max-width: 100%;
+    @include size(100% auto);
+    @include clearfix;
+    position: relative;
+    text-align: left;
+    padding: 4rem 3rem 0 1rem;
+    
+    @include media($font-sm-break-size) {
+      padding: 0 2rem 0 1rem;
+      position: absolute;
+      @include transform(translateY(-50%));
+      top: calc(50% - 30px);
+    }
+  }
+  
+  .hero-text {
+    @include outer-container;
+    max-width: 53em;
+    
+    h1 {
+      font-size: 1.4em;
+      line-height: 1.6em;
+      font-family: $secondary-font-family;
+      margin-top: 0;
+      color: $white;
+      position: relative;
+      @include transition (all 0.2s ease-in-out);
+      
+      @include media($font-sm-break-size) {
+        font-size: 2.2em;
+        line-height: 1.48em;
+      }
+      span {
+        display: inline;
+        background: $hero-font-bg;   
+        position: relative;
+        left: 0.3em;
+        padding:4px;
+        box-shadow: 0.3em 0 0 $hero-font-bg, 0.3em *-1 0 0 $hero-font-bg;   
+      }
+    }
+    
+    h2 {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      color: $white;
+      position: relative;
+      @include transition (all 0.2s ease-in-out);
+      
+      a {
+        color: white;
+        border-bottom: 2px solid $white;
+        
+        &:hover, &:focus {
+          border-bottom-color: $yellow;
+        }
+      }
+      @include media($font-sm-break-size) {
+        font-size: 1.8em;
+        line-height: 1.5em;
+      }
+      span {
+        display: inline;
+        background: $hero-font-bg;   
+        position: relative;
+        left: 0.3em;
+        padding:4px;
+        box-shadow: 0.3em 0 0 $hero-font-bg, 0.3em *-1 0 0 $hero-font-bg;   
+      }
+    }
+  }
+  
+  .home_vid {
+    display: none;
+    @extend %center-absolute;
+    width: 100%;
+    z-index: -1;
+    width: auto;
+    height: 102%;
+    
+    @include media($image-sm-break-size) {
+      width: 102%;
+      height: auto;
+    }
+    @include media($font-sm-break-size) {
+      width: auto;
+      height: 102%;
+    }
+    @include media($image-break-size) {
+      width: 102%;
+      height: auto;
+    }
+    
+    @include media($lg-screen) {
+      display: block;
+    }
+    
+  }
+  
+  .home_img {
+    display: block;
+    @extend %center-absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background: url(../img/hero.png) no-repeat center center / cover; 
+    
+    @include media($lg-screen) {
+      display: none;
+    }
+  }
+  
+  
+  a.down-arrow {
+    @include size(62px);
+    display: block;
+    position: relative;
+    @include margin(1em auto);
+    border: 2px solid $white;
+    border-radius: 50%;
+    background:  transparentize($white, 0.9);
+    overflow: hidden;
+    color: $white;
+    font-weight: bold;
+    
+    img {
+      height: 20px;
+      @include position(absolute, 50% null null 50%);
+      @include transition(all 0.2s ease-in-out);
+      @include transform(translate(-50%, -50%));
+    }
+
+    div {
+      @include position(absolute, -50% auto null 0);
+      width: 100%;
+      text-align: center;
+      @include transition(top 0.2s ease-in-out);
+    }
+    
+    @include media($font-sm-break-size) {
+      position: absolute;
+      left: 50%;
+      bottom: 1em;
+      @include transform(translateX(-50%));
+    }
+    
+    &:hover, &:focus {
+      @include media($font-sm-break-size) {
+        @include size(70px);
+      }
+      img {
+        @include transform(translate(-50%, 200%));
+      }
+       div{
+         top: 50%;
+         @include transform(translateY(-50%));
+       }
+    }
+  }
+}

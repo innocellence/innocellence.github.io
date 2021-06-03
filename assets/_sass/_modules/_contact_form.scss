@@ -1,0 +1,40 @@
+//Contact Widget
+section.contact {
+  background: $section-background;
+
+  input[type="submit"] {
+    margin-top: $base-spacing;
+    display: block;
+    min-width: 150px;
+  }
+
+  input:not([type="submit"]):valid, textarea:valid {
+    border-color: $emerald;
+  }
+
+  form {
+    padding: $base-spacing 0;
+  }
+  label {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+  
+  span {
+    padding-right: $base-padding;
+  }
+  .message {
+    color: transparentize($base-font-color, .5);
+  }
+  .message.valid {
+    color: $emerald;
+  }
+
+  .message.invalid {
+    color: $red;
+  }
+  
+//  input:not([type="submit"]):invalid, textarea:invalid {
+//    border-color: red;
+//  }
+}

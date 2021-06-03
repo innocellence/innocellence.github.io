@@ -1,124 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://innocellence.com/</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/index</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/about</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/services</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/process</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/contact</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/careers</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/jp</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/updates</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/privacy</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/terms</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/sitemap</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/about</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/services</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/process</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/contact</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/privacy</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/cn/disclaimer</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/jp/contact</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/jp/privacy</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/jp/disclaimer</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://innocellence.com/documents/InnoCellence-Prestigious-Award-2016.pdf</loc>
-  <lastmod>2021-06-01T04:38:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+---
+layout: none
+exclude: true
+permalink: /sitemap.xml
+redirect_from:
+  - /d/sitemap.xml
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign sorted_pages = site.pages | sort: 'title' %}
+{% for page in sorted_pages %}
+{% if page.exclude != true and page.lang == 'en' %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>Monthly</changefreq>
+  </url>
+{% endif %}
+{% endfor %}
+{% for page in sorted_pages %}
+{% if page.exclude != true and page.lang == 'zh' %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>Monthly</changefreq>
+  </url>
+{% endif %}
+{% endfor %}
 </urlset>

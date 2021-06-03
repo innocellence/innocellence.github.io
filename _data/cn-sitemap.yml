@@ -1,0 +1,60 @@
+# Top Nav
+topnav:
+- title: InnoCellence
+  menuitems:
+    - title: 主页
+      url: /cn/
+    - title: 关于我们
+      url: /cn/about/
+    - title: 了解我们
+      url: /cn/capabilities/
+    - title: 联系我们
+      url: /cn/contact/
+
+# Sub Nav
+capability_subnav:
+- title: 了解我们
+  menuitems:
+    - title: 全部
+      url: /cn/capabilities/
+    - title: 数字化咨询
+      url: /cn/capabilities/digital_consultation/
+    - title: 设计 & 用户体验
+      url: /cn/capabilities/design_user_experience/
+    - title: 快速原型设计
+      url: /cn/capabilities/rapid_prototyping/
+    - title: 移动解决方案
+      url: /cn/capabilities/mobile_solutions/
+    - title: 网站 & 应用开发
+      url: /cn/capabilities/website_application_development/
+    - title: 客户洞察 & 分析
+      url: /cn/capabilities/customer_insights_analytics/
+      
+# Sub Nav
+about_subnav:
+- title: 关于我们
+  menuitems:
+    - title: 关于我们
+      url: /cn/about/
+    - title: 专业流程
+      url: /cn/about/process/   
+
+# Corporate
+corporate:
+- title: 协议
+  menuitems:
+    - title: 免责声明
+      url: /cn/corporate/disclaimer/
+    - title: 隐私政策
+      url: /cn/corporate/privacy/
+
+# Social
+social:
+- title: 社交
+  menuitems:
+    - title: 领英
+      icon: '<i class="fa fa-fw fa-linkedin"></i>'
+      external_url: https:/www.linkedin.com/company/innocellence
+    - title: 微信
+      icon: '<i class="fa fa-fw fa-wechat"></i>'
+      external_url: http://weixin.qq.com/r/MUwtKezEySS1KahKbxm1 

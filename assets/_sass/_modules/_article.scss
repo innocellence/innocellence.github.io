@@ -1,0 +1,61 @@
+.article-content {
+  > p:first-of-type {
+    @extend p.lead;
+  }
+}
+.article-related {
+  padding-top: $base-spacing;
+  margin-top: $base-spacing;
+  border-top: $base-border;
+  
+  @include media($md-screen) {
+    padding: 0 0 0 $base-spacing;
+    margin: 0;
+    border-top: none;
+  }
+  ul.latest {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      color: $base-font-color;
+      padding-bottom: $base-padding;
+      margin-bottom: $base-padding;
+      border-bottom: $base-border;
+
+      &:hover, 
+      &:focus {
+        color: $link-color;
+      }
+    }
+    h4 {
+      margin-top: 0;
+      margin-bottom: $small-spacing;
+    }
+  }
+  ul.latest, 
+  ul.tags {
+    margin-bottom: $base-spacing * 2;
+  }
+}
+
+.article-footer {
+  border-top: $base-border;
+  
+  #top-button {
+    margin-right: 0;
+    
+    @include media($tab-screen) {
+      float: right;
+    }
+  }
+  .article-share {
+    a {
+      display: inline-block;
+      margin-right: $base-padding;
+      margin-bottom: $small-spacing;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+section.full {
+  max-width: 100%;
+  background:  lighten($pearl, 4%);
+  
+  .container {
+    @include outer-container;
+  }
+}

@@ -1,0 +1,50 @@
+$inno-red: #EF4B46;
+$shadow-grey: #CBCBCB;
+
+/*
+Author card styles
+*/
+figure.author-image {
+  position: relative;
+  top: 80px;
+  margin: 0 0 15px 0;
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 1px 4px $shadow-grey;
+    width: 180px;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+.author-card-item {
+  margin: 0 auto;
+  width: 400px;
+
+  @media screen and (max-width: 30em) {
+    width: auto;
+  }
+}
+
+.author-card, .author-card-with-image {
+  margin-bottom: 50px;
+
+  h1 {
+    color: $inno-red;
+  }
+}
+
+.author-card-with-image {
+  padding-top: 50px;
+}
+
+/*
+View all Posts
+*/
+.back-to-posts {
+  text-align: left;
+
+}

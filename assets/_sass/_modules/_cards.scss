@@ -1,0 +1,114 @@
+//Card Section
+section.cards {
+  background: $section-background;
+  max-width: 100%;
+
+  .heading {
+    @include outer-container;
+    text-align: center;
+    padding: 3em 0.5em 0 0.5em;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+section.subscribe {
+  @extend section.cards;
+
+  .heading {
+    padding: 0;
+  }
+}
+
+//Flex Grid
+.flex-grid {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+//Masonry Grid
+.masonry-grid {
+}
+
+//Card List
+.card-list {
+  @include outer-container;
+  @include clearfix;
+  list-style: none;
+  padding: $base-spacing 0;
+  margin: 0 auto;
+}
+
+//Card Sizes
+.card-item,
+.card-sizer {
+  width: 100%;
+
+  @include media($md-screen) {
+    width: 50%;
+  }
+  @include media($lg-screen) {
+    width: 33.3%;
+  }
+}
+
+//Card Styles
+.card-item {
+  @include display(flex);
+  padding: $small-spacing;
+}
+
+.card {
+  padding: $base-padding;
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  color: $base-font-color;
+  box-shadow: $card-shadow;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+
+    .image {
+      opacity: 0.8;
+      @include filter(grayscale(100%));
+    }
+    .content {
+      color: $card-color;
+    }
+  }
+
+  a {
+    border: none;
+  }
+
+  //Card Content
+  .image {
+    @include transition (all $base-duration $base-timing);
+  }
+  .content {
+    @include transition (all $base-duration $base-timing);
+    color: $base-font-color;
+
+    .title {
+      margin: $small-spacing 0;
+      color: $card-color;
+    }
+    *:last-child {
+      margin-bottom: $base-padding;
+    }
+  }
+
+  ul.tags {
+    padding-top: $small-spacing;
+    border-top: $base-border;
+
+    li:before {
+      display: none;
+    }
+  }
+}

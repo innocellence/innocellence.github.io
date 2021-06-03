@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+{% if page.section == 'capabilities' %}
+  <article>
+    <div class="sidebar">{% include menu_capability_subnav.html %}</div>
+    <div>
+      {{ content }}
+    </div>
+  </article>
+{% elsif page.section == 'about' %}
+  <article>
+    <div class="sidebar">{% include menu_about_subnav.html %}</div>
+    <div>
+      {{ content }}
+    </div>
+  </article>
+  {% else %}
+    {{ content }}
+{% endif %}
+
+{% unless page.section == 'contact' or page.section == 'careers' %}
+  {% include module-shoutout_enquiry.html %}  
+{% endunless %}  

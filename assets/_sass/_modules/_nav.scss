@@ -1,0 +1,402 @@
+// Media Sizes
+$mobile-menu: $sm;
+$large-logo-mode: 560px;
+
+// Media
+$horizontal-bar-mode: 940px;
+
+// Colors
+$navigation-background: $pearl;
+
+$off-white: #f9f9f9;
+$nav-bg: $white;
+$nav-color: $red;
+$toggle-height: 50px;
+$navigation-height: 70px;
+$navitem-background: $off-white;
+
+// Logo
+.logo {
+  display: block;
+  float: left;
+  height: 100%;
+  border: none;
+  margin-top: 4px;
+  line-height: 1;
+  
+  &:hover,
+  &:focus {
+    border: none;
+  }
+
+  img.logo-icon {
+    @include size(70px 60px);
+
+    @include media (min-width $large-logo-mode) {
+      display: none;
+    }
+    //IE 9 svg support
+    img.logo-icon[src*=".svg"] {
+     width: 70px\9;  
+    }
+    //IE 10 svg support
+    @media screen and (min-width:0\0) {
+      img.logo-icon[src*=".svg"] {
+      width: 70px;
+      height: 60px;  
+      }
+    }  
+  }// End Logo-icon 
+  img.logo-text {
+    display:  none;
+    @include size(250px 66px);
+    vertical-align: middle;
+
+    @include media (min-width $large-logo-mode) {
+      display: inline;
+    }
+
+    //IE 9 svg support
+    img.logo-text[src*=".svg"] {
+     width: 250px\9;  
+    }
+    //IE 10 svg support
+    @media screen and (min-width:0\0) {
+      img.logo-text[src*=".svg"] {
+      width: 250px;
+      height: 66px;  
+      }
+    }  
+  }// End Logo-text
+}
+
+.main-navigation {
+  background-color: $nav-bg;
+  border-bottom: $base-border;
+  line-height: $toggle-height;
+  width: 100%;
+  z-index: 9999;
+  position: relative; 
+  
+  @include media($horizontal-bar-mode) {
+    line-height: $navigation-height;
+  }
+  
+  // Nav menu
+  .navigation-wrapper {
+    @include outer-container;
+    @include clearfix;
+    position: relative;
+    z-index: 999;
+  }
+  
+  nav {
+    float: right;
+    
+    &.main-menu {
+      clear: both;
+      z-index: -1;
+      position: relative;
+      float: left;
+      
+       @include media (max-width $horizontal-bar-mode - 1px) {
+          width: 100%;
+          padding: 0;
+        }
+      
+      @include media ($horizontal-bar-mode) {
+        clear:none;
+      }
+    }
+  } // End nav
+
+  // Navigational-menu
+  ul.navigation-menu {
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
+    margin: 0;
+    float: right;
+    
+    @include media (max-width $horizontal-bar-mode - 1px) {
+      display: none;
+      width: 100%;
+      padding: 0;
+      
+      .flex-menu {
+        @include display(flex);
+        @include justify-content(space-around);
+        @include flex-wrap(wrap);
+      }
+    }
+  }
+  
+  // Language menu  
+  ul.language-menu {
+    -webkit-transform-style: preserve-3d; // stop webkit flicker
+    float: right;
+    margin: 0;
+    padding: 0;
+    
+    li a span {
+      margin-right: $small-spacing; 
+      border: $base-border;
+      box-sizing: content-box;
+    }
+    
+    // Small device display
+    @include media(max-width $horizontal-bar-mode - 1px) {      
+      > li {
+        width: auto;
+        float: right;
+        display:block;
+        margin: $small-spacing;
+        border-radius: $base-border-radius;
+        border: none;
+        background: transparent;
+//        border: 2px solid $base-font-color;
+
+        > a {
+//          font-weight: bold; 
+        }
+
+        &:hover {
+//          background: $base-font-color;
+          background: $navitem-background;
+          border-color: $base-font-color;
+
+          > a {
+//            color:  $nav-bg;
+            color: inherit;
+          }
+          > a:after {
+            color: inherit !important;
+//            color: $nav-bg !important;
+          }
+        }
+      }
+    }
+  }
+
+  
+  // Nav items
+  ul li {
+    display: block;
+    float: left;
+    padding: 0 $base-padding;
+    border-top: 3px solid transparent; 
+    @include transition(background $base-duration $base-timing, border-color $base-duration $base-timing);
+   
+    a {
+      color: $base-font-color;
+      display: block;
+      outline: none;
+      text-decoration: none;
+      border: none;
+      @include transition(border-bottom $base-duration $base-timing);
+    }
+    // Tablet Menu
+    @include media(max-width $horizontal-bar-mode - 1px) {
+      @include flex-grow(1);
+      text-align: center;
+      background: $navitem-background;
+      border-top-color: $navigation-background;
+    }
+  }
+
+  li:focus,
+  li:hover,
+  li.active {
+   border-top-color: $nav-color; 
+   background-color: transparentize($white, 0.25);
+   a {
+      color: $nav-color;
+    }
+  }
+  li.active {
+    font-weight: bold;
+  }
+  
+    
+  // Nav Dropdown
+  li.nav-link.more {
+    position: relative;
+    padding-right: $base-spacing;
+
+    > a {
+      padding-right: $base-padding;
+    }
+    > a:after {
+      @include position(absolute, auto $base-padding auto auto);
+      color: $base-font-color;
+      content: "\f107";
+      font-family: $fa;
+    }
+    > a.up-arrow:after {
+      content: "\f106";
+    }
+    &:hover, 
+    &:focus {
+      a:after {
+        color: $nav-color;
+      }
+    }
+  } // End nav-link.more 
+  
+  // Submenu  
+  ul.submenu.displayMenu {
+    display: block;
+  }
+  ul.submenu {
+    display: none;
+    @include position(absolute, $toggle-height 0 null null);
+    padding: $base-padding 0;
+    min-width: 150px;
+    background-color: $white;
+    border-radius: $base-border-radius;
+    text-align: left;
+    box-shadow: 0 2px 10px 1px rgba(0,0,0,0.2);
+
+    li {
+      width: 100%;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: none;
+      background-color: $white;
+      text-align:  left;
+      
+      a {
+        width: inherit;
+        color: $base-font-color;
+      }
+      &:before {
+        display: none;
+      }
+      &:hover{
+        border-color: $nav-color;     
+        a {
+          color: $nav-color;
+        }
+      }
+    } // End Submenu li
+  } // End ul.submenu
+
+  //Submenu arrow
+  ul.submenu:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
+    margin-left: -12px;
+    width: 0; height: 0;
+    border-bottom: 12px solid $white;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent; 
+  }
+} // End Main Navigation
+
+
+// Mobile Menu and Toggle
+.toggle-container {
+  width: auto;
+  float: right;
+  display:block;
+  margin: $small-spacing;
+  padding: 0 $base-padding;
+//  border: 2px solid $nav-color;
+  border: none;
+  border-radius: $base-border-radius;
+  @include transition(background $base-duration $base-timing);
+  
+  &:hover,
+  &:focus {
+    border: none;
+//    border: 2px solid $nav-color;
+  }
+
+  @include media($horizontal-bar-mode) {
+    display:none;
+  }  
+}
+.toggle-text {
+  display: block;
+  float: left;
+  line-height: inherit;
+  padding-right: $base-padding;
+//  font-weight: bold;
+  color: $base-font-color;
+  @include transition(color $base-duration $base-timing);  
+  
+  @include media (max-width $mobile-menu) {    
+    display: none;
+  }
+}
+.toggle-switch {
+  position: relative;  
+  display: block;
+  float: left;
+  height: $toggle-height;
+  width: 24px;
+  
+  span {
+    display: block;
+    position: relative;
+    top: 45%;
+    height: 2px;
+    padding: 1px;
+//    background-color: $nav-color;
+    background-color: $base-font-color;
+  }
+  
+  span::before,
+  span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 100%; //6
+//    background: $nav-color;
+    background: $base-font-color;
+    content: "";
+    padding: 1px;
+    @include transition(background $base-duration $base-timing);
+  }
+  span::before {
+    top: -7px;
+    @include transition-property(top, transform);
+  }
+
+  span::after {
+    bottom: -7px;
+    @include transition-property(bottom, transform);
+  }
+}
+.toggle-switch.active {
+  span {
+    background: none !important;
+  }
+  span::before {
+    background: $red;
+    top: 0;
+    @include transform(rotate(45deg));
+  }
+  span::after {
+    bottom: 0;
+    background: $blue;
+    @include transform(rotate(-45deg));
+  }
+}
+.toggle-container:hover {
+//  background: $nav-color;
+  border: none;
+  background: $navitem-background;
+ 
+  .toggle-switch span {
+//    background:  $nav-bg;
+    &:before,
+    &:after {
+//      background:  $nav-bg;
+    }
+  }
+  .toggle-text {
+//    color: $nav-bg;        
+  }
+}

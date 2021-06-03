@@ -1,0 +1,62 @@
+# Top Nav
+topnav:
+- title: InnoCellence
+  menuitems:
+    - title: Home
+      url: /
+    - title: About Us
+      url: /en/about/
+    - title: Our Capabilities
+      url: /en/capabilities/
+    - title: Contact
+      url: /en/contact/
+
+# Sub Nav
+capability_subnav:
+- title: Our Capabilities
+  menuitems:
+    - title: Our Capabilities
+      url: /en/capabilities/
+    - title: Digital Consultating &amp; Content Creation
+      url: /en/capabilities/digital_consultation/  
+    - title: Creative Design &amp; User Experience
+      url: /en/capabilities/design_user_experience/  
+    - title: Rapid Prototyping
+      url: /en/capabilities/rapid_prototyping/
+    - title: Mobile Solutions
+      url: /en/capabilities/mobile_solutions/  
+    - title: Website &amp; Application Development
+      url: /en/capabilities/website_application_development/
+    - title: Customer Insights &amp; Analytics
+      url: /en/capabilities/customer_insights_analytics/
+
+# Sub Nav
+about_subnav:
+- title: About
+  menuitems:
+    - title: About Us
+      url: /en/about/
+    - title: Our Process
+      url: /en/about/process/
+    - title: News & Media
+      url:  /en/about/news/
+
+# Corporate
+corporate:
+- title: Legal
+  menuitems:
+    - title: Terms &amp; Conditions
+      url: /en/corporate/terms/
+    - title: Privacy Policy
+      url: /en/corporate/privacy/
+
+# Social
+social:
+- title: Social
+  menuitems:
+    - title: LinkedIn
+      icon: '<i class="fa fa-fw fa-linkedin"></i>'
+      external_url: https://www.linkedin.com/company/innocellence
+    - title: WeChat
+      icon: '<i class="fa fa-fw fa-wechat"></i>'
+      external_url: http://weixin.qq.com/r/MUwtKezEySS1KahKbxm1

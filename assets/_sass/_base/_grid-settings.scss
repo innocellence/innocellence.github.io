@@ -1,0 +1,30 @@
+//Overwirte the bourbon defaults
+@import "neat/neat-helpers";
+
+//Breakpoints
+$mob: 320px;
+$sm: 480px; //Master Size
+$tab: 500px;
+$md: 600px; //Master Size
+$lg: 1020px; //Master Size
+$ex: 1200px;
+
+// Override Neat's grid settings
+$max-width: 1140px !global;
+//$gutter: em(40);
+//$grid-columns: 4 !global;
+//$visual-grid-index: front;
+//$visual-grid-color: tomato;
+//$visual-grid: true;
+$column: modular-scale(3, 1em, $major-third) !global;
+$gutter: modular-scale(2, 1em, $major-third) !global;
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+// Breakpoints
+$mob-screen: new-breakpoint(min-width $mob 4);
+$sm-screen: new-breakpoint(min-width $sm 4); //Master Size
+$tab-screen: new-breakpoint(min-width $tab 6);
+$md-screen: new-breakpoint(min-width $md 8); //Master Size
+$lg-screen: new-breakpoint(min-width $lg 12); //Master Size
+$ex-screen: new-breakpoint(min-width $ex 12);

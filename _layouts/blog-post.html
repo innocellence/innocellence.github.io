@@ -1,0 +1,73 @@
+--- 
+layout: blog
+---
+{% assign sorted_tags = site.tags | sort %}
+
+<section class="feed-article">
+  <div class="container">
+    <div class="row">
+      <article class="col-t6 col-m5 col-l8 article-content">
+        <h2 id="top">{{ page.title }}</h2>
+        <time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        <div class="author">{% if page.author %}<a href="{{ site.baseurl }}/blog/author.html">{{ page.author }}</a>{% else %}{{ site.site_author }}{% endif %}</div>
+        <hr>
+        {{ content }}
+        <div class="article-footer">
+          <div class="article-tags">
+            <ul class="tags"> 
+            {% for g in page.tags %}
+              <li class="feed-tag">
+                <a href="{{ site.baseurl }}/blog/tag.html">{{ g }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>  
+          <div class="article-share">
+            <a href="#" title="Share on Facebook"><i class="fa fa-fw fa-facebook"></i> Share on Facebook</a>
+            <a href="#" title="Share on Linked In"><i class="fa fa-fw fa-linkedin"></i> Share on Linked In</a>
+            <a id="top-button" href="#top"><i class="fa fa-fw fa-angle-up"></i> Back to Top</a>
+          </div>
+        </div>
+        {% if site.disqus_shortname %}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        var disqus_shortname = '{{site.disqus_shortname}}'; 
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Sorry, your browser does not support comments, please enable JavaScript and try again.</a></noscript>
+        {% endif %}
+      </article>
+      
+      <aside class="col-t6 col-m3 col-l4 article-related">
+        <h5 class="section-title">Latest</h5>
+        <ul class="latest">
+          {% for post in site.posts | limit:3 %}    
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}" >
+              <time>{{ post.date | date: "%-d %B %Y" }}</time>
+              <h4>{{ post.title }}</h4>
+              <div class="read-more">Read More »</div>
+            </a>
+          </li>
+          {% endfor %}
+          <li>
+            <a href="{{ site.baseurl }}/blog/index.html"><strong>See All Posts <i class="fa fa-fw fa-angle-right"></i></strong></a>
+          </li>
+        </ul>
+        <h5 class="section-title">All Tags</h5>
+        <ul class="tags">
+        {% for tag in sorted_tags %}
+          {% assign t = tag | first %}
+          <li class="feed-tag">
+            <a href="{{ site.baseurl }}/blog/tag.html">{{ t }}</a>
+          </li>
+        {% endfor %}
+        </ul>      
+      </aside>
+    </div>
+  </div>
+</section>

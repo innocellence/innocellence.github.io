@@ -1,0 +1,88 @@
+.process {
+  
+  @include keyframes(FadeInLeft) {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.4;
+    }
+  }
+  @include keyframes(Down) {
+    from {
+      @include transform(translateY(0));
+    }
+    to {
+      @include transform(translateY(4px));
+    }
+  }
+  
+  svg .note {
+    opacity: 0;
+    @include transition(all .2s ease);
+    
+    @include media($md-screen) {
+      opacity: 1;
+      @include animation(Down 2s ease forwards alternate infinite);
+    }
+  }
+  
+  svg .multiply {
+    mix-blend-mode: multiply;
+  }
+  svg .discover {
+    fill: $red;
+    @include animation(FadeInLeft 2s .4s ease-out forwards alternate infinite);
+  }
+  svg .design {
+    fill: $sky;
+    @include animation(FadeInLeft 2s .8s ease-out forwards alternate infinite);
+  }
+  svg .iterate {
+    fill: $emerald;
+    @include animation(FadeInLeft 2s 1.2s ease-out forwards alternate infinite);
+  }
+  svg .develop {
+    fill: $yellow;
+    @include animation(FadeInLeft 2s 1.6s ease-out forwards alternate infinite);
+  }
+  svg .deliver {
+    fill: $grey;
+    @include animation(FadeInLeft 2s 2s ease-out forwards alternate infinite);
+  }
+  
+  .process-items {
+    div {
+      &:nth-child(1) {
+        h4 {color: $red;}
+      }
+      &:nth-child(2) {
+        h4 {color: $blue;}
+      }
+      &:nth-child(3) {
+        h4 {color: $emerald;}
+      }
+      &:nth-child(4) {
+        h4 {color: $yellow;}
+      }
+      &:nth-child(5) {
+        h4 {color: $grey;}
+      }
+      
+      @include media($tab-screen) {
+        @include span-columns(4 of 12);
+        
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+        &:nth-child(4) {
+          @include span-columns(6 of 12);
+          clear: both;
+        }
+        &:nth-child(5) {
+          @include span-columns(6 of 12);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#{$all-button-inputs},
+a.btn,
+button {
+  display: inline-block;
+  width: 100%;
+  padding: $base-spacing /2;
+  margin: $small-spacing 0;
+  border-radius: $base-border-radius;
+  font-size: $base-font-size;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: center;
+  color: $btn-font;
+  background: $btn-bg;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  outline: 0;
+  @include transition(all $base-duration $base-timing);
+
+  @include media($sm-screen) {
+    width: auto;
+  }
+
+  &:hover,
+  &:focus {
+    background: $btn-bg-hover;
+    color: $btn-font;
+  }
+
+  &.alt {
+    background: $btn-alt-bg;
+    border: $btn-alt-border;
+    color: $btn-alt-color;
+
+    &:hover,
+    &:focus {
+      background: $btn-alt-color;
+      color: $btn-alt-bg;
+    }
+  }
+
+  &.secondary {
+    background: $btn-secondary-bg;
+
+    &:hover,
+    &:focus {
+      background: $btn-secondary-bg-hover;
+    }
+  }
+
+  &:disabled, &.disabled {
+    cursor: not-allowed;
+    background: $btn-diasbled-bg;
+
+    &:hover,
+    &:focus {
+      background: $btn-diasbled-bg;
+    }
+  }
+}

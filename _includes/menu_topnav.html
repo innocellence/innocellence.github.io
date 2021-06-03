@@ -1,0 +1,34 @@
+{% assign full_url = page.url | append:'index.html' %}
+{% if page.lang == 'zh' %}
+<nav class="main-menu" role="navigation">
+  <ul id="js-nav-menu" class="navigation-menu show">
+    <div class="flex-menu">
+    {% for menu in site.data.cn-sitemap.topnav %}
+    {% for menuitem in menu.menuitems %}
+    {% if menuitem.url == full_url or menuitem.url contains page.section %}
+    <li class="nav-link active"><a href="{{ site.baseurl }}{{ menuitem.url | replace:'index.html','' | replace:'.html','' }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% else %}
+    <li class="nav-link"><a href="{{ site.baseurl }}{{ menuitem.url | replace:'index.html','' | replace:'.html','' }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    </div>
+  </ul>
+</nav>
+{% else %}
+<nav class="main-menu" role="navigation">
+  <ul id="js-nav-menu" class="navigation-menu show">
+    <div class="flex-menu">
+    {% for menu in site.data.en-sitemap.topnav %}
+    {% for menuitem in menu.menuitems %}
+    {% if menuitem.url == full_url or menuitem.url contains page.section %}
+    <li class="nav-link active"><a href="{{ site.baseurl }}{{ menuitem.url | replace:'index.html','' | replace:'.html','' }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% else %}
+    <li class="nav-link"><a href="{{ site.baseurl }}{{ menuitem.url | replace:'index.html','' | replace:'.html','' }}" title="{{ menuitem.title }}">{{ menuitem.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    </div>
+  </ul>
+</nav>
+{% endif %}

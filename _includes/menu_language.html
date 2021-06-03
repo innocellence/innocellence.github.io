@@ -1,0 +1,23 @@
+{% if page.lang == 'zh' %}
+<nav>
+  <ul class="language-menu">
+    <li id="language-selector"class="nav-link more"><a href="javascript:void(0)"><span class="flag-icon flag-icon-cn"></span>中文</a>
+      <ul class="submenu">
+        <li><a href="{{ site.baseurl }}/"><span class="flag-icon flag-icon-us"></span>English</a></li>
+        <li><a href="{{ site.baseurl }}/jp/"><span class="flag-icon flag-icon-jp"></span>日本語</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+{% else %}
+<nav>
+  <ul class="language-menu">
+    <li id="language-selector"class="nav-link more"><a href="javascript:void(0)"><span class="flag-icon flag-icon-us"></span>English</a>
+      <ul class="submenu">
+        <li><a href="{{ site.baseurl }}/cn/"><span class="flag-icon flag-icon-cn"></span>中文</a></li>
+        <li><a href="{{ site.baseurl }}/jp/"><span class="flag-icon flag-icon-jp"></span>日本語</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+{% endif %}

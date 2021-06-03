@@ -1,0 +1,33 @@
+$sidenav-small-break: $sm;
+$sidenav-large-break: $lg;
+
+article {
+  @extend .container 
+}
+
+article .sidebar {
+  width: 300px;
+  float: left;
+  
+  @include media (max-width $sidenav-large-break - 1px) {
+    width: 240px;
+  }
+
+  @include media (max-width $sidenav-small-break - 1px) {
+    width: 100%;
+  }  
+}
+
+article .sidebar + div {
+  width: calc(100% - 300px);
+  float: left;
+  
+  @include media (max-width $sidenav-large-break - 1px) {
+    width: calc(100% - 240px);
+  }
+
+  @include media (max-width $sidenav-small-break - 1px) {
+    width: 100%;
+  }  
+}
+

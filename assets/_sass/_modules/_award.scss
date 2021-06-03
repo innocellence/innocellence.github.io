@@ -1,0 +1,32 @@
+$award-break: 820px;
+
+.award {
+  @include outer-container();
+
+  .award-container {
+    @include row();
+    @include display(flex);
+    @include align-items(center);
+
+    border-bottom: $base-border;
+    padding-bottom: $base-spacing;
+    margin-bottom: $base-spacing;
+  }
+
+  .award-content {
+    @include span-columns(12);
+    @include media($award-break){
+      @include span-columns(8);
+      }
+  }
+
+  .award-image {
+    display: none;
+    @include media($award-break){
+      display: block;
+      @include span-columns(4);
+      }
+  }
+}
+
+

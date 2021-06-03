@@ -1,0 +1,55 @@
+.container {
+  @include outer-container;
+  padding: $base-spacing $base-padding;
+  
+  @include media($ex-screen) {
+    padding: $base-spacing 0;
+  }
+}
+
+#usp {
+  .row > div {
+    text-align: center;
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+    
+    p {
+      padding: 0 $base-padding;
+    }
+    @include media($tab-screen) {
+      @include span-columns(3 of 6);
+      
+      &:nth-child(1) {
+        @include shift(1.5);  
+      }
+    }
+    @include media($md-screen) {
+      @include span-columns(4 of 12);
+      &:nth-child(1) {
+        @include shift(0);  
+      }
+    }
+  }
+}
+
+#capability-list {
+  .row > div {
+    text-align: center;
+    @include span-columns(2 of 4);
+    @include omega(2n);
+    
+    @include media($tab-screen) {
+      @include omega-reset (2n);
+      @include span-columns(2 of 6);
+      @include omega(3n);
+    }
+    
+    @include media($md-screen) {
+      @include span-columns(2 of 12);
+      @include omega-reset (3n);
+      @include omega(6n);
+    }
+    
+  }
+}

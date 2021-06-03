@@ -1,0 +1,15 @@
+.section-title {
+  display:block;
+  margin-bottom: $base-spacing;
+  padding-top: $base-padding;
+  text-transform: uppercase;
+  position: relative;
+  
+  &:before {
+    @include size(54px 4px);
+    position: absolute;
+    top: 0;
+    content: '';
+    background: $base-font-color;
+  }
+}
