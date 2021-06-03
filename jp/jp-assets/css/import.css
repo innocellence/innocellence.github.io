@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* ==========================================
+import.css
+========================================== */
+
+/* base
+========================================== */
+@import url("/jp/jp-assets/css/960.css");
+@import url("/jp/jp-assets/css/pc.css");
+@import url("/jp/jp-assets/css/footer.css");
+@import url("/jp/jp-assets/css/globalnavi.css");
