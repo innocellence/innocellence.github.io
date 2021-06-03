@@ -1,0 +1,72 @@
+site_title: InnoCellence
+site_keywords: business solutions, mobile soutions, apps, app development, enterprise apps, gamified apps, mobile solutions, user experience design, user interface, UX design, digital innovation, digital creative agency, global creative, digital consultation, website and application development, software development, technology, Singapore, Dalian, Tokyo
+site_author: InnoCellence Systems Pte. Ltd.
+site_description: At InnoCellence, we are passionate about innovating the mobile, web, UX design, app development, and digital strategy solutions your business needs to succeed.
+site_description_cn: 我们是InnoCellence，数字创新者。我们为您的业务挑战创建数字化解决方案：用户体验设计，移动应用和创新咨询。
+
+#Google Analytics ID, auto populated to all pages
+google_analytics: UA-29851112-1
+
+#Commenting via Discuss
+disqus_shortname: innocellence
+
+# URL Prefixing
+url: http://innocellence.com
+baseurl: 
+blogurl: blog.innocellence.com
+
+#port for Jekyll Serve
+port: 9822
+
+#permalink: pretty
+
+#sass import directory
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+  
+#Plugins
+plugins:  
+  - jekyll-redirect-from  
+  
+#Permalinks
+permalink: /:categories/:year/:month/:day/:slug/  
+  
+#Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"   
+  -
+    scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: "blog"
+      category: "blog"
+      lang: "en" 
+    
+  - 
+    scope: 
+      path: ''
+      type: 'pages'
+    values:
+      lang: en
+  
+  -
+    scope:
+      path: 'en'
+    values:
+      lang: en 
+  
+  -
+    scope:
+      path: 'cn'
+    values:
+      lang: zh       
+      
+#Set Syntax Highlighter
+highlighter: rouge

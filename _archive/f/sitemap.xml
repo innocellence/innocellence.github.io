@@ -1,0 +1,28 @@
+---
+layout: none
+exclude: true
+permalink: /sitemap.xml
+redirect_from:
+  - /d/sitemap.xml
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign sorted_pages = site.pages | sort: 'title' %}
+{% for page in sorted_pages %}
+{% if page.exclude != true and page.lang == 'en' %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>Monthly</changefreq>
+  </url>
+{% endif %}
+{% endfor %}
+{% for page in sorted_pages %}
+{% if page.exclude != true and page.lang == 'zh' %}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>Monthly</changefreq>
+  </url>
+{% endif %}
+{% endfor %}
+</urlset>
