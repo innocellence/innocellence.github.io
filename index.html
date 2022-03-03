@@ -8,13 +8,15 @@ redirect_from:
 <head>  
   <meta http-equiv='Content-Security-Policy' 
         content="default-src 'none'; 
-                 script-src 'self' 'nonce-core' 'nonce-gtag' 'nonce-touch' *.innocellence.com google-analytics.com code.jquery.com googletagmanager.com; 
-                 style-src 'self' 'nonce-root' *.innocellence.com; 
+                 script-src 'self' 'nonce-core' 'nonce-gtag' 'nonce-touch' *.innocellence.com google-analytics.com code.jquery.com www.googletagmanager.com; 
+                 style-src 'self' 'nonce-root' *.innocellence.com 'unsafe-inline'; 
                  img-src 'self' data: *; 
                  media-src 'self'; 
+                 object-src 'self';
                  frame-src *.innocellence.com; 
                  font-src *; 
                  frame-ancestors 'self'; 
+                 prefetch-src 'self'
                  connect-src 'self';">
   <meta charset="utf-8">
   <title>InnoCellence | Excellence in Digital Innovation</title>
